@@ -32,7 +32,9 @@ export default {
 nav {
   padding: 30px;
 }
-
+p { 
+  margin: 0px;
+}
 .tittle {
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;

@@ -5,7 +5,7 @@
         <div class="col-md-6 col-12">
           <div class="columna1-header text-start">
             <h1 class="tittle white-font">Somos una agencia creativa<span class="tittle purple-font">.</span></h1>
-            <p>Potenciamos la identidad visual de negocios en crecimiento, para darle una apariencia memorable a lo que tu marca está transitando actualmente.</p>
+            <p class="mb-3">Potenciamos la identidad visual de negocios en crecimiento, para darle una apariencia memorable a lo que tu marca está transitando actualmente.</p>
             <button type="button" class="btn btn-purple rounded-pill">
               <router-link class="nav-link" to="/home">Ver Más</router-link>
             </button>
@@ -16,6 +16,12 @@
         </div>
       </div>
     </header>
+  </div>
+  <div>
+    <img class="olas-div" src="../assets/olas_header.png" alt="">
+  </div>
+  <div class="container-fluid">
+    
     <section id="lo-que-hacemos">
 
     </section>
@@ -51,7 +57,7 @@ export default {
 .home {
   background-color: #1b1629;
   color: #fff;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 header {
   padding-top: 100px;
@@ -64,5 +70,8 @@ header {
 .tittle {
   font-size: 75px;
   line-height: 71px;
+}
+.olas-div {
+  width: 100%;
 }
 </style>

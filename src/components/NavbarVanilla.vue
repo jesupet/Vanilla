@@ -1,11 +1,12 @@
 <template>
+  <PreHeaderVanilla/>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid mt-4">
       <a class="navbar-brand" href="#"><img class="logo-navbar" src="../assets/logo_vanilla_navbar.png" alt="logo vanilla"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link class="nav-link align-middle" aria-current="page" to="/home">Home</router-link>
@@ -33,12 +34,25 @@
   </nav>
 </template>
 
+<script>
+import PreHeaderVanilla from '../components/PreHeaderVanilla.vue'
+
+export default {
+  components: { PreHeaderVanilla }
+}
+</script>
+
+
 <style>
   nav {
     background-color: #1b1629;
     color: #fff;
     
     height: 75px;
+  }
+  .navbar-toggler {
+    border: 0px;
+    color: #fff;
   }
   .logo-navbar {
     height: 70px;
