@@ -22,8 +22,18 @@
   </div>
   <div class="container-fluid">
     
-    <section id="lo-que-hacemos">
-
+    <section class="container" id="lo-que-hacemos">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <ProductoVanilla/>
+        </div>
+        <div class="col-12 col-md-4">
+          
+        </div>
+        <div class="col-12 col-md-4">
+          
+        </div>
+      </div>
     </section>
     <section id="nosotros">
 
@@ -44,11 +54,12 @@
 </template>
 
 <script>
+import ProductoVanilla from '../components/ProductoVanilla.vue'
 
 export default {
   name: 'HomeVanilla',
   components: {
-   
+    ProductoVanilla,
   }
 }
 </script>
