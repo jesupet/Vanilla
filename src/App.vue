@@ -1,30 +1,52 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div id="app">
+    <NavbarVanilla/>
+    <router-view/>
+    <FooterVanilla/>
+  </div>
 </template>
 
+<script>
+import NavbarVanilla from './components/NavbarVanilla.vue'
+import FooterVanilla from './components/FooterVanilla.vue'
+
+export default {
+  name: "App",
+  components: { NavbarVanilla, FooterVanilla}
+}
+</script>
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Source+Serif+Pro:wght@400;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 nav {
   padding: 30px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.tittle {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.white-font {
+  color:#fff;
+}
+.purple-font {
+  color: #6d44bc;
+}
+.btn-purple {
+  background-color: #6d44bc;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 24px 10px 24px;
 }
 </style>
