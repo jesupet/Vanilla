@@ -33,7 +33,10 @@
         <div class="col-12 col-md-4 thd-col text-end">
           <h3 class="tittle">Lo que <span class="purple-font tittle">hacemos</span></h3>
           <p>para que tu negocio TRANSMITA lo genial que es</p>
-          <img src="../assets/flecha-curva-1.svg" alt="" class="mt-5">
+          <img src="../assets/flecha-curva-1.svg" alt="flecha curva" class="mt-5">
+          <div class="cta-cont">
+            <CircleCTA/>
+          </div>
         </div>
       </div>
     </section>
@@ -58,12 +61,14 @@
 <script>
 import ProductoVanilla from '../components/ProductoVanilla.vue'
 import ProductoVanilla2 from '../components/ProductoVanilla2.vue'
+import CircleCTA from '../components/CircleCTA.vue'
 
 export default {
   name: 'HomeVanilla',
   components: {
     ProductoVanilla,
-    ProductoVanilla2
+    ProductoVanilla2,
+    CircleCTA,
   }
 }
 </script>
@@ -95,5 +100,7 @@ header {
 .sec-col {
   padding-top: 280px;
 }
-
+.cta-cont {
+  padding:50px;
+}
 </style>
