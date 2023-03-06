@@ -1,5 +1,5 @@
 <template>
-  <div class="card text-center product-card" v-for="(product, index) in firstThreeElements" :key="index">
+  <div class="card text-center product-card" v-for="(product, index) in nextThreeElements" :key="index">
   <div class="card-body">
     <img class="prod-icon" :src='product.icon' alt="">
     <div class="title-box">
@@ -15,10 +15,10 @@
 import { mapState, mapGetters } from 'vuex'
 
 export default {
-  name: "ProductoVanilla",
+  name: "ProductoVanilla2",
   computed: {
     ...mapState(["products"]),
-    ...mapGetters(['firstThreeElements'])
+    ...mapGetters(['nextThreeElements'])
   },
 }
 </script>

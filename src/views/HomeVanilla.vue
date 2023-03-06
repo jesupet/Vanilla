@@ -24,14 +24,16 @@
     
     <section class="container" id="lo-que-hacemos">
       <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 fst-col">
           <ProductoVanilla/>
         </div>
-        <div class="col-12 col-md-4">
-          
+        <div class="col-12 col-md-4 sec-col">
+          <ProductoVanilla2/>
         </div>
-        <div class="col-12 col-md-4">
-          
+        <div class="col-12 col-md-4 thd-col text-end">
+          <h3 class="tittle">Lo que <span class="purple-font tittle">hacemos</span></h3>
+          <p>para que tu negocio TRANSMITA lo genial que es</p>
+          <img src="../assets/flecha-curva-1.svg" alt="" class="mt-5">
         </div>
       </div>
     </section>
@@ -55,11 +57,13 @@
 
 <script>
 import ProductoVanilla from '../components/ProductoVanilla.vue'
+import ProductoVanilla2 from '../components/ProductoVanilla2.vue'
 
 export default {
   name: 'HomeVanilla',
   components: {
     ProductoVanilla,
+    ProductoVanilla2
   }
 }
 </script>
@@ -85,4 +89,11 @@ header {
 .olas-div {
   width: 100%;
 }
+.fst-col , .thd-col {
+  padding-top: 100px;
+}
+.sec-col {
+  padding-top: 280px;
+}
+
 </style>
