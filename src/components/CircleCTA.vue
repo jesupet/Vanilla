@@ -1,13 +1,15 @@
 <template>
-  <div class="circle-box text-center">
-    <div>
-      <h4 class="tittle purple-font">¿Necesitas refrescar la imagen de tu negocio?</h4>
+  <div class="text-center">
+    <div class="circle-box text-center">
+      <div>
+        <h4 class="tittle purple-font">¿Necesitas refrescar la imagen de tu negocio?</h4>
+      </div>
     </div>
-  </div>
-  <div class="text-center cont-btn">
-    <button type="button" class="btn btn-purple rounded-pill">
-      <router-link class="nav-link" to="/home">Hablemos!</router-link>
-    </button>
+    <div class="text-center cont-btn">
+      <button type="button" class="btn btn-purple rounded-pill">
+        <router-link class="nav-link" to="/home">Hablemos!</router-link>
+      </button>
+    </div>
   </div>
 </template>
 
@@ -41,8 +43,6 @@ export default {
   position: relative;
 }
 .btn-purple {
-  position: absolute;
-  top: -20px;
-  right: 25%;
+  margin-top: -25px;
 }
 </style>

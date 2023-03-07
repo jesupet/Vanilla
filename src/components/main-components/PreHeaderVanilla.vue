@@ -31,5 +31,7 @@ export default{
         display: inline-block;
       }
   }
-  
+  .wsp-icon {
+    width: 20px;
+  }
 </style>

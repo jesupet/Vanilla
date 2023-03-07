@@ -21,17 +21,23 @@
   <div class="container-fluid">
     
     <section class="container" id="lo-que-hacemos">
-      <div class="row">
-        <div class="col-12 col-md-4 fst-col">
+      <div class="row text-center">
+        <div class="d-xl-none d-block text-end my-5">
+          <h3 class="tittle">Lo que <span class="purple-font tittle">hacemos</span></h3>
+          <p class="uppercase">para que tu negocio transmita lo genial que es</p>
+        </div>
+        <div class="col-12 col-xl-4 fst-col text-center">
           <ProductoVanilla/>
         </div>
-        <div class="col-12 col-md-4 sec-col">
+        <div class="col-12 col-xl-4 sec-col">
           <ProductoVanilla2/>
         </div>
-        <div class="col-12 col-md-4 thd-col text-end">
-          <h3 class="tittle">Lo que <span class="purple-font tittle">hacemos</span></h3>
-          <p>para que tu negocio TRANSMITA lo genial que es</p>
-          <img src="../assets/flecha-curva-1.svg" alt="flecha curva" class="mt-5">
+        <div class="col-12 col-xl-4 thd-col text-xl-end text-center">
+          <div class="d-none d-xl-inline">
+            <h3 class="tittle">Lo que <span class="purple-font tittle">hacemos</span></h3>
+            <p class="uppercase">para que tu negocio transmita lo genial que es</p>
+          </div>
+          <img src="../assets/flecha-curva-1.svg" alt="flecha curva" class="d-none d-xl-block mt-5">
           <div class="cta-cont">
             <CircleCTA/>
           </div>
@@ -91,13 +97,17 @@ header {
   font-size: 75px;
   line-height: 71px;
 }
-.fst-col , .thd-col {
+ 
+@media (min-width: 1200px){
+  .sec-col {
+    padding-top: 280px;
+  }
+  .fst-col , .thd-col {
   padding-top: 100px;
-}
-.sec-col {
-  padding-top: 280px;
+  }
 }
 .cta-cont {
   padding:50px;
 }
+
 </style>

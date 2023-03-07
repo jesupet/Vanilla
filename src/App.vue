@@ -55,7 +55,7 @@ a {
   font-size: 14px;
   padding: 10px 24px 10px 24px;
 }
-.wsp-icon {
-    width: 20px;
-  }
+.uppercase {
+  text-transform: uppercase;
+}
 </style>

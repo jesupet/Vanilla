@@ -1,14 +1,14 @@
 <template>
-  <div class="card text-center product-card" v-for="(product, index) in firstThreeElements" :key="index">
-  <div class="card-body">
-    <img class="prod-icon" :src='product.icon' alt="">
-    <div class="title-box">
-      <h5 class="card-title tittle">{{product.name}}</h5>
+  <div class="card text-center product-card mx-auto" v-for="(product, index) in firstThreeElements" :key="index">
+    <div class="card-body">
+      <img class="prod-icon" :src='product.icon' alt="">
+      <div class="title-box">
+        <h5 class="card-title tittle">{{product.name}}</h5>
+      </div>
+      <p class="card-text">{{product.description}}</p>
+      <a href="/home" class="arrow_right"><font-awesome-icon icon="fa-arrow-right" size="3x"/></a>
     </div>
-    <p class="card-text">{{product.description}}</p>
-    <a href="/home" class="arrow_right"><font-awesome-icon icon="fa-arrow-right" size="3x"/></a>
   </div>
-</div>
 </template>
 
 <script>
@@ -32,6 +32,7 @@ export default {
   .product-card {
     width: 360px;
     height: 360px;
+    box-sizing: border-box;
     background-color: #6d44bc;
     color: #fff;
     border-radius: 8%;
