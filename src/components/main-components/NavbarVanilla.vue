@@ -2,7 +2,7 @@
   <PreHeaderVanilla/>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid mt-4">
-      <a class="navbar-brand" href="#"><img class="logo-navbar" src="../assets/logo_vanilla_navbar.png" alt="logo vanilla"></a>
+      <a class="navbar-brand" href="#"><img class="logo-navbar" src="../../assets/vanilla_logos/logo_vanilla_navbar.png" alt="logo vanilla"></a>
       <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon toggler-icon"></span>
       </button>
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import PreHeaderVanilla from '../components/PreHeaderVanilla.vue'
+import PreHeaderVanilla from './PreHeaderVanilla.vue'
 
 export default {
   components: { PreHeaderVanilla }
@@ -47,7 +47,6 @@ export default {
   nav {
     background-color: #1b1629;
     color: #fff;
-    
     height: 75px;
   }
   .navbar-toggler {

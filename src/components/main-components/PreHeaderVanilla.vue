@@ -6,7 +6,7 @@
       </div>
       <div class="col-md-4 col-10 d-flex justify-content-end">
         <p>+56 9 8862 5328</p>
-        <a href="" class="num-contacto"><img src="../assets/whatsapp_icon.png" alt="" class="wsp-icon"></a>
+        <a href="" class="num-contacto"><img src="../../assets/rrss_logos/whatsapp_icon.png" alt="" class="wsp-icon"></a>
       </div>
     </div>
   </div>

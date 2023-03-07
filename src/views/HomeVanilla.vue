@@ -17,9 +17,7 @@
       </div>
     </header>
   </div>
-  <div>
-    <img class="olas-div" src="../assets/olas_header.png" alt="">
-  </div>
+  <WavesDiv/>
   <div class="container-fluid">
     
     <section class="container" id="lo-que-hacemos">
@@ -62,6 +60,7 @@
 import ProductoVanilla from '../components/ProductoVanilla.vue'
 import ProductoVanilla2 from '../components/ProductoVanilla2.vue'
 import CircleCTA from '../components/CircleCTA.vue'
+import WavesDiv from '../components/WavesDiv.vue'
 
 export default {
   name: 'HomeVanilla',
@@ -69,6 +68,7 @@ export default {
     ProductoVanilla,
     ProductoVanilla2,
     CircleCTA,
+    WavesDiv,
   }
 }
 </script>
@@ -90,9 +90,6 @@ header {
 .tittle {
   font-size: 75px;
   line-height: 71px;
-}
-.olas-div {
-  width: 100%;
 }
 .fst-col , .thd-col {
   padding-top: 100px;
