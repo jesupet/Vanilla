@@ -35,6 +35,10 @@ nav {
 p { 
   margin: 0px;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 .tittle {
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
@@ -51,4 +55,7 @@ p {
   font-size: 14px;
   padding: 10px 24px 10px 24px;
 }
+.wsp-icon {
+    width: 20px;
+  }
 </style>
