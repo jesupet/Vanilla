@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="olas-div" src="../assets/olas_header.png" alt="">
+    <img class="olas-div img-fluid" src="../assets/olas_header.png" alt="">
   </div>
 </template>
 
@@ -19,5 +19,6 @@ export default {
 <style scoped>
 .olas-div {
   width: 100%;
+  border: 0px;
 }
 </style>

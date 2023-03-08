@@ -77,9 +77,6 @@ export default {
     padding-left: 30px;
     padding-right: 30px;
   }
-  .reflect-y {
-    transform: scaleY(-1);
-  }
   .rrss-cont {
     margin-top: 20px;
   }

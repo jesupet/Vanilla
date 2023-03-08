@@ -58,4 +58,7 @@ a {
 .uppercase {
   text-transform: uppercase;
 }
+.reflect-y {
+    transform: scaleY(-1);
+  }
 </style>
