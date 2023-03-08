@@ -70,32 +70,8 @@
     <section id="proyectos" class="container-fluid text-center py-5">
       <h3 class="tittle">Algunos <span class="purple-font tittle">proyectos</span></h3>
       <p class="subtitle">que nos hacen sentir orgullosos</p>
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="" class="d-block w-100" alt="">
-          </div>
-          <div class="carousel-item">
-            <img src="" class="d-block w-100" alt="">
-          </div>
-          <div class="carousel-item">
-            <img src="" class="d-block w-100" alt="">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <CarouselBrands class="d-block d-xl-none"/>
+      <GridBrands class="d-none d-xl-block"/>
     </section>
     <section id="clientes">
       
@@ -114,6 +90,8 @@ import ProductoVanilla from '../components/ProductoVanilla.vue'
 import ProductoVanilla2 from '../components/ProductoVanilla2.vue'
 import CircleCTA from '../components/CircleCTA.vue'
 import WavesDiv from '../components/WavesDiv.vue'
+import CarouselBrands from '../components/CarouselBrands.vue'
+import GridBrands from '../components/GridBrands.vue'
 
 export default {
   name: 'HomeVanilla',
@@ -122,6 +100,8 @@ export default {
     ProductoVanilla2,
     CircleCTA,
     WavesDiv,
+    CarouselBrands,
+    GridBrands,
   }
 }
 </script>
@@ -172,4 +152,5 @@ header {
   width: 200px;
   margin: auto;
 }
+
 </style>
