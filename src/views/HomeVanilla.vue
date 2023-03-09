@@ -73,8 +73,9 @@
       <CarouselBrands class="d-block d-xl-none"/>
       <GridBrands class="d-none d-xl-block"/>
     </section>
-    <section id="clientes">
-      
+    <section id="clientes" class="container-fluid text-center py-5">
+      <h3 class="tittle">Han <span class="purple-font tittle">confiado</span></h3>
+      <p class="subtitle">en nuestro talento y compromiso</p>
     </section>
     <div id="cta">
 
@@ -152,5 +153,7 @@ header {
   width: 200px;
   margin: auto;
 }
-
+#clientes {
+  background-color: rgba(0, 0, 0, 0.04);
+}
 </style>
