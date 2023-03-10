@@ -59,6 +59,17 @@ a {
   text-transform: uppercase;
 }
 .reflect-y {
-    transform: scaleY(-1);
-  }
+  transform: scaleY(-1);
+}
+.no-bold {
+  font-weight: 300;
+}
+.tittle2 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 55px;
+  margin: 0px;
+}
+.bold {
+  font-weight: 700;
+}
 </style>

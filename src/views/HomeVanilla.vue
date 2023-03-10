@@ -80,9 +80,14 @@
         <ClientCard/>
       </div>
     </section>
-    <div id="cta">
-
+    <WavesDiv class="reflect-y"/>
+    <div id="cta" class="container-fluid">
+      <div class="container">
+        <h3 class="tittle2 bold d-inline">¿Tu negocio necesita<br><span class="tittle2 no-bold">expresar lo genial que es?</span></h3>
+        <img src="../assets/purple-arrow.svg" alt="flecha curva" class="d-md-inline d-none">
+      </div>
     </div>
+    <WavesDiv/>
     <section id="valores">
 
     </section>
@@ -146,7 +151,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
-#nosotros {
+#nosotros, #cta {
   background-color: #1b1629;
   color: #fff;
 }
@@ -161,4 +166,5 @@ header {
 #clientes {
   background-color: rgba(0, 0, 0, 0.04);
 }
+
 </style>
