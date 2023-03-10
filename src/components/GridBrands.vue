@@ -1,5 +1,5 @@
 <template>
-  <div class="container my-5">
+  <div class="container my-5 d-none d-xl-block">
     <div class="row mx-auto">
     <div class="col-4 box">
       <img src="../assets/projects_img/lavanda_clean_sq.png" alt="">

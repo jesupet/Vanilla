@@ -76,6 +76,9 @@
     <section id="clientes" class="container-fluid text-center py-5">
       <h3 class="tittle">Han <span class="purple-font tittle">confiado</span></h3>
       <p class="subtitle">en nuestro talento y compromiso</p>
+      <div class="row container mx-auto">
+        <ClientCard/>
+      </div>
     </section>
     <div id="cta">
 
@@ -93,6 +96,7 @@ import CircleCTA from '../components/CircleCTA.vue'
 import WavesDiv from '../components/WavesDiv.vue'
 import CarouselBrands from '../components/CarouselBrands.vue'
 import GridBrands from '../components/GridBrands.vue'
+import ClientCard from '../components/ClientCard.vue'
 
 export default {
   name: 'HomeVanilla',
@@ -103,6 +107,7 @@ export default {
     WavesDiv,
     CarouselBrands,
     GridBrands,
+    ClientCard
   }
 }
 </script>

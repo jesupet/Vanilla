@@ -35,7 +35,7 @@ export default {
     box-sizing: border-box;
     background-color: #6d44bc;
     color: #fff;
-    border-radius: 8%;
+    border-radius: 25px;
     margin-bottom: 53px;
   }
   .prod-icon {

@@ -1,0 +1,23 @@
+[
+  {
+    "picture": "../assets/clients_img/v_irarrazaval.png",
+    "company": "Remax Central",
+    "name": "Verónica Irarrázaval",
+    "review": "Me encantó trabajar con Vanilla, ya que rápidamente captaron la idea de lo que estábamos buscando, con una excelente disposición a encontrar las soluciones de nuestros requerimientos.",
+    "bgcolor": "whitebg"
+  },
+  {
+    "picture": "../assets/clients_img/p_rojas.png",
+    "company": "Antara Mining",
+    "name": "Patricio Rojas Ábalos",
+    "review": "Un gran servicio, muy personalizado y de alto nivel. En Antara Mining estamos muy contentos. Totalmente recomendable!",
+    "bgcolor": "purplebg"
+  },
+  {
+    "picture": "../assets/clients_img/n_henriquez.png",
+    "company": "Optimmet",
+    "name": "Natacha Henriquez",
+    "review": "En Vanilla inmediatamente me acogieron y comenzaron a trabajar. Hemos trabajado en proyectos de ingeniería que requerían Diseño, entre ellos Manuales, Procedimientos y Gestión Visual, todos con excelentes resultados",
+    "bgcolor": "whitebg"
+  }
+]

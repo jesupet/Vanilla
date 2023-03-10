@@ -34,7 +34,7 @@ export default {
     height: 360px;
     background-color: #6d44bc;
     color: #fff;
-    border-radius: 8%;
+    border-radius: 25px;
     margin-bottom: 53px;
   }
   .prod-icon {
