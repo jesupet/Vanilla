@@ -24,9 +24,7 @@
             <router-link class="nav-link" to="/home">Han Confiado</router-link>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-purple rounded-pill">
-              <router-link class="nav-link" to="/home">Hablemos!</router-link>
-            </button>
+            <PurpleButton :to="'/home'" :buttonText="'Hablemos!'"/>
           </li>
         </ul>
       </div>
@@ -36,9 +34,13 @@
 
 <script>
 import PreHeaderVanilla from './PreHeaderVanilla.vue'
+import PurpleButton from '../buttons/PurpleButton.vue'
 
 export default {
-  components: { PreHeaderVanilla }
+  components: { 
+    PreHeaderVanilla,
+    PurpleButton
+  }
 }
 </script>
 

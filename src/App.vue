@@ -72,4 +72,10 @@ a {
 .bold {
   font-weight: 700;
 }
+
+a:hover, button:hover router-link a{
+  text-decoration: none;
+  color: inherit
+}
+
 </style>

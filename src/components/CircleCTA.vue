@@ -6,18 +6,19 @@
       </div>
     </div>
     <div class="text-center cont-btn">
-      <button type="button" class="btn btn-purple rounded-pill">
-        <router-link class="nav-link" to="/home">Hablemos!</router-link>
-      </button>
+      
+      <PurpleButton :to="'/home'" :buttonText="'Hablemos!'"/>
     </div>
   </div>
 </template>
 
 <script>
-
-
+import PurpleButton from './buttons/PurpleButton.vue'
 export default {
   name: "CircleCTA",
+  components: {
+    PurpleButton,
+  },
   computed: {
     
   },

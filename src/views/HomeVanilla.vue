@@ -6,9 +6,10 @@
           <div class="columna1-header text-start">
             <h1 class="tittle white-font">Somos una agencia creativa<span class="tittle purple-font">.</span></h1>
             <p class="mb-3">Potenciamos la identidad visual de negocios en crecimiento, para darle una apariencia memorable a lo que tu marca está transitando actualmente.</p>
-            <button type="button" class="btn btn-purple rounded-pill">
+            <!--<button type="button" class="btn btn-purple rounded-pill">
               <router-link class="nav-link" to="/home">Ver Más</router-link>
-            </button>
+            </button>-->
+            <PurpleButton :to="'/home'" :buttonText="'Ver Más'"/>
           </div>
         </div>
         <div class="col-md-6 col-12">
@@ -72,6 +73,7 @@
       <p class="subtitle">que nos hacen sentir orgullosos</p>
       <CarouselBrands class="d-block d-xl-none"/>
       <GridBrands class="d-none d-xl-block"/>
+      <PurpleButton :to="'/home'" :buttonText="'Ver Todos'"/>
     </section>
     <section id="clientes" class="container-fluid text-center py-5">
       <h3 class="tittle">Han <span class="purple-font tittle">confiado</span></h3>
@@ -82,9 +84,10 @@
     </section>
     <WavesDiv class="reflect-y"/>
     <div id="cta" class="container-fluid">
-      <div class="container">
-        <h3 class="tittle2 bold d-inline">¿Tu negocio necesita<br><span class="tittle2 no-bold">expresar lo genial que es?</span></h3>
-        <img src="../assets/purple-arrow.svg" alt="flecha curva" class="d-md-inline d-none">
+      <div class="container d-flex mx-auto cta-box">
+        <h3 class="tittle2 bold d-md-inline d-block">¿Tu negocio necesita<br><span class="tittle2 no-bold">expresar lo genial que es?</span></h3>
+        <img src="../assets/purple-arrow.svg" alt="flecha curva" class="d-md-flex d-none purple-arrow">
+        <TransparentButton class="d-block" :to="'/home'" :buttonText="'¡Trabajemos juntos!'"/>
       </div>
     </div>
     <WavesDiv/>
@@ -102,6 +105,8 @@ import WavesDiv from '../components/WavesDiv.vue'
 import CarouselBrands from '../components/CarouselBrands.vue'
 import GridBrands from '../components/GridBrands.vue'
 import ClientCard from '../components/ClientCard.vue'
+import TransparentButton from '@/components/buttons/TransparentButton.vue'
+import PurpleButton from '../components/buttons/PurpleButton.vue'
 
 export default {
   name: 'HomeVanilla',
@@ -112,7 +117,9 @@ export default {
     WavesDiv,
     CarouselBrands,
     GridBrands,
-    ClientCard
+    ClientCard,
+    TransparentButton,
+    PurpleButton,
   }
 }
 </script>
@@ -166,5 +173,19 @@ header {
 #clientes {
   background-color: rgba(0, 0, 0, 0.04);
 }
-
+.purple-arrow {
+  margin: -60px 0px 0px -60px;
+}
+@media (max-width: 768px) {
+  .tittle2 {
+    text-align: center;
+  }
+  .cta-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.tittle2 {
+  padding: 20px 0px;
+}
 </style>

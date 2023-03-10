@@ -17,24 +17,26 @@
     </div>
     </div>
     <div class="row mx-auto">
-    <div class="col-4 box">
-      <img src="../assets/projects_img/setup_sq.png" alt="">
+      <div class="col-4 box">
+        <img src="../assets/projects_img/setup_sq.png" alt="">
+      </div>
+      <div class="col-8 box">
+        <img src="../assets/projects_img/setup.png" alt="">
+      </div>
     </div>
-    <div class="col-8 box">
-      <img src="../assets/projects_img/setup.png" alt="">
-    </div>
-    </div>
+    <CarouselLogos/>
   </div>
-  <button type="button" class="btn btn-purple rounded-pill">
-    <router-link class="nav-link" to="/home">Ver todos</router-link>
-  </button>
 </template>
 
 <script>
 
+import CarouselLogos from './CarouselLogos.vue'
 
 export default {
   name: "GridBrands",
+  components: {
+    CarouselLogos,
+  },
   computed: {
     
   },
