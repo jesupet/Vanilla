@@ -1,7 +1,7 @@
 <template>
   <div class="card text-center product-card mx-auto" v-for="(product, index) in firstThreeElements" :key="index">
     <div class="card-body">
-      <img class="prod-icon" :src='product.icon' alt="">
+      <img class="prod-icon" :src='"vanilla"+product.icon' alt="">
       <div class="title-box">
         <h5 class="card-title tittle">{{product.name}}</h5>
       </div>

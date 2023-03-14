@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-6 col-12">
           <div class="columna1-header text-start">
-            <h1 class="tittle white-font">Somos una agencia creativa<span class="tittle purple-font">.</span></h1>
+            <h1 class="tittle1 white-font">Somos una agencia creativa<span class="tittle1 purple-font">.</span></h1>
             <p class="mb-3">Potenciamos la identidad visual de negocios en crecimiento, para darle una apariencia memorable a lo que tu marca está transitando actualmente.</p>
             <!--<button type="button" class="btn btn-purple rounded-pill">
               <router-link class="nav-link" to="/home">Ver Más</router-link>
@@ -23,7 +23,7 @@
     <section class="container px-0" id="lo-que-hacemos">
       <div class="row text-center">
         <div class="d-xl-none d-block text-end my-5">
-          <h3 class="tittle">Lo que <span class="purple-font tittle">hacemos</span></h3>
+          <h3 class="tittle1">Lo que <span class="purple-font tittle1">hacemos</span></h3>
           <p class="subtitle">para que tu negocio transmita lo genial que es</p>
         </div>
         <div class="col-12 col-xl-4 fst-col text-center">
@@ -34,7 +34,7 @@
         </div>
         <div class="col-12 col-xl-4 thd-col text-xl-end text-center">
           <div class="d-none d-xl-inline">
-            <h3 class="tittle">Lo que <span class="purple-font tittle">hacemos</span></h3>
+            <h3 class="tittle1">Lo que <span class="purple-font tittle1">hacemos</span></h3>
             <p class="subtitle">para que tu negocio transmita lo genial que es</p>
           </div>
           <img src="../assets/flecha-curva-1.svg" alt="flecha curva" class="d-none d-xl-block mt-5">
@@ -46,7 +46,7 @@
     </section>
     <WavesDiv class="reflect-y"/>
     <section id="nosotros" class="text-center container-fluid px-0 py-5">
-      <h3 class="tittle">Algo<br><span class="purple-font tittle">sobre nosotros</span></h3>
+      <h3 class="tittle1">Algo<br><span class="purple-font tittle1">sobre nosotros</span></h3>
       <p class="subtitle">a ver si te hace clic!</p>
       <div class="row container mx-auto us-cont">
         <div class="col-12 col-xl-3 my-4">
@@ -69,20 +69,21 @@
     </section>
     <WavesDiv/>
     <section id="proyectos" class="container-fluid text-center py-5">
-      <h3 class="tittle">Algunos <span class="purple-font tittle">proyectos</span></h3>
+      <h3 class="tittle1">Algunos <span class="purple-font tittle1">proyectos</span></h3>
       <p class="subtitle">que nos hacen sentir orgullosos</p>
       <CarouselBrands class="d-block d-xl-none"/>
       <GridBrands class="d-none d-xl-block"/>
       <PurpleButton :to="'/home'" :buttonText="'Ver Todos'"/>
     </section>
     <section id="clientes" class="container-fluid text-center py-5">
-      <h3 class="tittle">Han <span class="purple-font tittle">confiado</span></h3>
+      <h3 class="tittle1">Han <span class="purple-font tittle1">confiado</span></h3>
       <p class="subtitle">en nuestro talento y compromiso</p>
       <div class="row container mx-auto">
         <ClientCard/>
+        <CarouselLogos/>
       </div>
     </section>
-    <WavesDiv class="reflect-y"/>
+    <WavesDiv class="reflect-y over"/>
     <div id="cta" class="container-fluid">
       <div class="container d-flex mx-auto cta-box">
         <h3 class="tittle2 bold d-md-inline d-block">¿Tu negocio necesita<br><span class="tittle2 no-bold">expresar lo genial que es?</span></h3>
@@ -91,8 +92,44 @@
       </div>
     </div>
     <WavesDiv/>
-    <section id="valores">
-
+    <section id="valores" class="container">
+      <div class="row">
+        <div class="col-12 col-xl-6 py-5">
+          <img src="../assets/woman.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-12 col-xl-6 py-5">
+          <h3 class="tittle3">Nos caracterizamos <span class="tittle3 purple-font">por</span></h3>
+          <p class="subtitle">estos atributos que cuidamos fielmente</p>
+          <div class="row pt-5">
+            <div class="col-xl-5 col-6 py-5">
+              <ul class="px-0">
+                <li>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Creativos</span>
+                </li>
+                <li>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Confiables</span>
+                </li>
+                <li>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Amigables</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xl-7 col-6 py-5 text-start">
+              <ul class="px-0">
+                <li>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Comprometidos</span>
+                </li>
+                <li>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Profesionales</span>
+                </li>
+                <li>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Conectados</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -107,6 +144,7 @@ import GridBrands from '../components/GridBrands.vue'
 import ClientCard from '../components/ClientCard.vue'
 import TransparentButton from '@/components/buttons/TransparentButton.vue'
 import PurpleButton from '../components/buttons/PurpleButton.vue'
+import CarouselLogos from '../components/CarouselLogos.vue'
 
 export default {
   name: 'HomeVanilla',
@@ -120,6 +158,7 @@ export default {
     ClientCard,
     TransparentButton,
     PurpleButton,
+    CarouselLogos
   }
 }
 </script>
@@ -137,10 +176,6 @@ header {
 .columna1-header {
   width: 70%;
   margin-left: 30px;
-}
-.tittle {
-  font-size: 75px;
-  line-height: 71px;
 }
  
 @media (min-width: 1200px){
@@ -187,5 +222,13 @@ header {
 }
 .tittle2 {
   padding: 20px 0px;
+}
+.over {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+.list-item {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 25px;
 }
 </style>

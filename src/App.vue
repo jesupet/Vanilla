@@ -27,21 +27,23 @@ export default {
   font-size: 100%;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  list-style: none;
 }
-
 nav {
   padding: 30px;
 }
 p { 
   margin: 0px;
 }
-a {
+a, ul{
   color: inherit;
   text-decoration: none;
 }
-.tittle {
+.tittle1 {
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
+  font-size: 75px;
+  line-height: 71px;
 }
 .white-font {
   color:#fff;
@@ -77,5 +79,10 @@ a:hover, button:hover router-link a{
   text-decoration: none;
   color: inherit
 }
-
+.tittle3 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 50px;
+  margin: 0px;
+  font-weight: 700;
+}
 </style>

@@ -24,18 +24,16 @@
         <img src="../assets/projects_img/setup.png" alt="">
       </div>
     </div>
-    <CarouselLogos/>
+    
   </div>
 </template>
 
 <script>
 
-import CarouselLogos from './CarouselLogos.vue'
-
 export default {
   name: "GridBrands",
   components: {
-    CarouselLogos,
+
   },
   computed: {
     
