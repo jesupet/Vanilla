@@ -1,18 +1,14 @@
 <template>
-  <div id="carouselBrands" class="carousel carousel-dark slide">
+  <div id="carouselBrands" class="carousel carousel-dark slide multiple-item-carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active row d-flex">
-        <div class="col-3">
-          <img src="../assets/clients_logos/lavandaclean_logo.png" class="" alt="">
-        </div>
-        <div class="col-3">
-          <img src="../assets/clients_logos/makuwool_logo.png" class="" alt="">
-        </div>
-        <div class="col-3">
-          <img src="../assets/clients_logos/ripp_logo.png" class="" alt="">
-        </div>
-        <div class="col-3">
-          <img src="../assets/clients_logos/setup_logo.png" class="" alt="">
+      <div class="carousel-item active">
+        <div v-for="(group, index) in carouselItems" :key="index" :class="['carousel-item', index === 0 ? 'active' : '']">
+          <div class="row">
+            <div v-for="(item, index) in group" :key="index" class="col-md-3">
+              <img :src="'../assets/clients_logos/'+item.name" class="" alt="">
+              {{item.name}}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -28,9 +24,17 @@
 </template>
 
 <script>
+import { mapState, mapGetters} from 'vuex'
 
 export default ({
   name: "CarouselLogos",
+  props: {
+    
+  },
+  computed: {
+      ...mapState(["itemsPerSlide"]),
+      ...mapGetters(["carouselItems"])
+    },
 })
 </script>
 
