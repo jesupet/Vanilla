@@ -2,7 +2,7 @@
   <div class="card text-center mx-auto client-card whitebg">
     <div class="card-body">
       <div class="box-img">
-        <img src="../assets/clients_img/v_irarrazaval.png" alt="">
+        <img src="../assets/clients_img/v_irarrazaval.png" alt="" class="img-fluid">
       </div>
       <div>
         <h4 class="card-title tittle4">Remax Central</h4>
@@ -14,7 +14,7 @@
   <div class="card text-center mx-auto client-card purplebg">
     <div class="card-body">
       <div class="box-img">
-        <img src="../assets/clients_img/p_rojas.png" alt="">
+        <img src="../assets/clients_img/p_rojas.png" alt="" class="img-fluid">
       </div>
       <div>
         <h4 class="card-title tittle4">Antara Mining</h4>
@@ -26,7 +26,7 @@
   <div class="card text-center mx-auto client-card whitebg">
     <div class="card-body">
       <div class="box-img">
-        <img src="../assets/clients_img/n_henriquez.png" alt="">
+        <img src="../assets/clients_img/n_henriquez.png" alt="" class="img-fluid">
       </div>
       <div>
         <h4 class="card-title tittle4">Optimmet</h4>
@@ -69,7 +69,7 @@ export default {
     color: #000;
     border: 0px;
     border-radius: 25px;
-    margin: 53px 0px;
+    margin: 53px 20px;
     width: 23rem;
     box-shadow: 10px 10px rgb(203, 201, 201);
   }
