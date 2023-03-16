@@ -2,7 +2,7 @@
   <div class="text-center">
     <div class="circle-box text-center">
       <div>
-        <h4 class="tittle purple-font">¿Necesitas refrescar la imagen de tu negocio?</h4>
+        <h4 class="tittle4 purple-font">¿Necesitas refrescar la imagen de tu negocio?</h4>
       </div>
     </div>
     <div class="text-center cont-btn">
@@ -36,7 +36,7 @@ export default {
   display: inline-flex;
   align-items: center;
 }
-.tittle {
+.tittle4 {
   font-size: 40px;
   line-height: 2rem;
 }

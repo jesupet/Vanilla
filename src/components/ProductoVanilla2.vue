@@ -3,7 +3,7 @@
   <div class="card-body">
     <img class="prod-icon" :src='product.icon' alt="">
     <div class="title-box">
-      <h5 class="card-title tittle">{{product.name}}</h5>
+      <h5 class="card-title tittle4">{{product.name}}</h5>
     </div>
     <p class="card-text">{{product.description}}</p>
     <a href="/home" class="arrow_right"><font-awesome-icon icon="fa-arrow-right" size="3x"/></a>
