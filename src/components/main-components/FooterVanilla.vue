@@ -55,6 +55,7 @@
         </div>
       </div>
     </div> 
+    <img src="../../assets/purple-little-circle.png" alt="circulo morado" class="purple-little-circle">
   </footer>
 </template>
 
@@ -108,5 +109,10 @@ export default {
   }
   .right-cont {
     padding: 0px 50px;
+  }
+  .purple-little-circle {
+    position: absolute;
+    z-index: 1;
+    right: 0;
   }
 </style>

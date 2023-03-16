@@ -75,6 +75,7 @@
       <GridBrands class="d-none d-xl-block"/>
       <PurpleButton :to="'/home'" :buttonText="'Ver Todos'"/>
     </section>
+    <img src="../assets/big_circle.png" alt="circulo morado" class="purple-big-circle">
     <section id="clientes" class="container-fluid text-center py-5">
       <h3 class="tittle1">Han <span class="purple-font tittle1">confiado</span></h3>
       <p class="subtitle">en nuestro talento y compromiso</p>
@@ -230,5 +231,10 @@ header {
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
   font-size: 25px;
+}
+.purple-big-circle {
+  position: absolute;
+  z-index: -1;
+  margin-top: -80px;
 }
 </style>
