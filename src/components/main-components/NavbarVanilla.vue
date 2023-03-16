@@ -67,6 +67,9 @@ export default {
     display: flex;
     align-items: center;
   }
+  .nav-link:hover {
+    color: #6d44bc;
+  }
   .nav-link {
     color: #fff;
     text-transform: uppercase;

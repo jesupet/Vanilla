@@ -1,20 +1,20 @@
 <template>
   <div id="carouselBrands" class="carousel carousel-dark slide multiple-item-carousel">
-    <div class="carousel-inner">
+    <div class="carousel-inner d-none d-md-block">
       <div class="carousel-item active">
-          <div class="row">
-            <div class="col-md-3">
-              <img src="../assets/clients_logos/lavandaclean-logo.png" class="" alt="">
-            </div>
-            <div class="col-md-3">
-              <img src="../assets/clients_logos/makuwool-logo.png" class="" alt="">
-            </div>
-            <div class="col-md-3">
-              <img src="../assets/clients_logos/ripp-logo.png" class="" alt="">
-            </div>
-            <div class="col-md-3">
-              <img src="../assets/clients_logos/setup-logo.png" class="" alt="">
-            </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="../assets/clients_logos/lavandaclean-logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-3">
+            <img src="../assets/clients_logos/makuwool-logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-3">
+            <img src="../assets/clients_logos/ripp-logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-3">
+            <img src="../assets/clients_logos/setup-logo.png" class="img-fluid" alt="">
+          </div>
         </div>
         <!--<div v-for="(group, index) in carouselItems" :key="index" :class="['carousel-item', index === 0 ? 'active' : '']">
           <div class="row">
@@ -25,6 +25,24 @@
           </div>
         </div>-->
       </div>
+    <div class="carousel-inner d-block d-md-none">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-12">
+            <img src="../assets/clients_logos/lavandaclean-logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-12">
+            <img src="../assets/clients_logos/makuwool-logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-12">
+            <img src="../assets/clients_logos/ripp-logo.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-12">
+            <img src="../assets/clients_logos/setup-logo.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -56,4 +74,5 @@ export default ({
 .carousel-inner {
   padding: 70px;
 }
+
 </style>

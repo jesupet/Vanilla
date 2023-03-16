@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="col-md-6 col-12">
-          imagen ampolleta
+          <img src="../assets/ampolleta.png" alt="" class="img-fluid">
         </div>
       </div>
     </header>
