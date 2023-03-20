@@ -2,7 +2,9 @@
   <div id="app">
     <NavbarVanilla/>
     <router-view/>
-    <FooterVanilla/>
+    <FooterVanilla>
+    <img src="./assets/purple-little-circle.png" alt="circulo morado" class="purple-little-circle">
+    </FooterVanilla>
   </div>
 </template>
 
@@ -90,4 +92,10 @@ a:hover, button:hover router-link a{
   font-weight: 700;
   font-size: 75px;
 }
+.purple-little-circle {
+    position: absolute;
+    z-index: 100;
+    right: 0px;
+    overflow: hidden;
+  }
 </style>

@@ -27,7 +27,7 @@
       <h5 class="card-title tittle4">{{product.name}}</h5>
     </div>
     <p class="card-text">{{product.description}}</p>
-    <a href="/home" class="arrow_right"><font-awesome-icon icon="fa-arrow-right" size="3x"/></a>
+    <a href="" class="arrow_right"><font-awesome-icon icon="fa-arrow-right" size="3x"/></a>
   </div>
 </div>
 -->

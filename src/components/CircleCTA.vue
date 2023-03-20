@@ -7,7 +7,7 @@
     </div>
     <div class="text-center cont-btn">
       
-      <PurpleButton :to="'/home'" :buttonText="'Hablemos!'"/>
+      <PurpleButton :to="'/'" :buttonText="'Hablemos!'"/>
     </div>
   </div>
 </template>

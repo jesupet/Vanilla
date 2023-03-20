@@ -6,10 +6,7 @@
           <div class="columna1-header text-start">
             <h1 class="tittle1 white-font">Somos una agencia creativa<span class="tittle1 purple-font">.</span></h1>
             <p class="mb-3">Potenciamos la identidad visual de negocios en crecimiento, para darle una apariencia memorable a lo que tu marca está transitando actualmente.</p>
-            <!--<button type="button" class="btn btn-purple rounded-pill">
-              <router-link class="nav-link" to="/home">Ver Más</router-link>
-            </button>-->
-            <PurpleButton :to="'/home'" :buttonText="'Ver Más'"/>
+            <PurpleButton :to="'/'" :buttonText="'Ver Más'"/>
           </div>
         </div>
         <div class="col-md-6 col-12">
@@ -73,9 +70,9 @@
       <p class="subtitle">que nos hacen sentir orgullosos</p>
       <CarouselBrands class="d-block d-xl-none"/>
       <GridBrands class="d-none d-xl-block"/>
-      <PurpleButton :to="'/home'" :buttonText="'Ver Todos'"/>
+      <PurpleButton :to="'/'" :buttonText="'Ver Todos'"/>
     </section>
-    <img src="../assets/big_circle.png" alt="circulo morado" class="purple-big-circle">
+    <img src="../assets/big_circle.png" alt="circulo morado" class="purple-big-circle img-fluid d-md-block d-none">
     <section id="clientes" class="container-fluid text-center py-5">
       <h3 class="tittle1">Han <span class="purple-font tittle1">confiado</span></h3>
       <p class="subtitle">en nuestro talento y compromiso</p>
@@ -89,7 +86,7 @@
       <div class="container d-flex mx-auto cta-box">
         <h3 class="tittle2 bold d-md-inline d-block">¿Tu negocio necesita<br><span class="tittle2 no-bold">expresar lo genial que es?</span></h3>
         <img src="../assets/purple-arrow.svg" alt="flecha curva" class="d-md-flex d-none purple-arrow">
-        <TransparentButton class="d-block" :to="'/home'" :buttonText="'¡Trabajemos juntos!'"/>
+        <TransparentButton class="d-block" :to="''" :buttonText="'¡Trabajemos juntos!'"/>
       </div>
     </div>
     <WavesDiv/>

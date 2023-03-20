@@ -34,7 +34,7 @@
               </li>
               <li>
                 <button type="button" class="btn btn-purple rounded-pill">
-                  <router-link class="nav-link" to="/home">Hablemos!</router-link>
+                  <router-link class="nav-link" to="/">Hablemos!</router-link>
                 </button>
               </li>
             </ul>
@@ -55,7 +55,7 @@
         </div>
       </div>
     </div> 
-    <img src="../../assets/purple-little-circle.png" alt="circulo morado" class="purple-little-circle">
+    
   </footer>
 </template>
 
@@ -110,9 +110,5 @@ export default {
   .right-cont {
     padding: 0px 50px;
   }
-  .purple-little-circle {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-  }
+  
 </style>

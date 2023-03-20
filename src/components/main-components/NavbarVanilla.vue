@@ -9,22 +9,22 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="nav-link align-middle" aria-current="page" to="/home">Home</router-link>
+            <router-link class="nav-link align-middle" aria-current="page" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/home">Nosotros</router-link>
+            <router-link class="nav-link" to="/">Nosotros</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/home">¿Qué Hacemos?</router-link>
+            <router-link class="nav-link" to="/">¿Qué Hacemos?</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/home">Proyectos</router-link>
+            <router-link class="nav-link" to="/">Proyectos</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/home">Han Confiado</router-link>
+            <router-link class="nav-link" to="/">Han Confiado</router-link>
           </li>
           <li class="nav-item">
-            <PurpleButton :to="'/home'" :buttonText="'Hablemos!'"/>
+            <PurpleButton :to="'/'" :buttonText="'Hablemos!'"/>
           </li>
         </ul>
       </div>
