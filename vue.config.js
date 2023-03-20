@@ -14,7 +14,9 @@ module.exports = {
         return options;
       });
   },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/vanilla/'
-    : '/'
 };
+module.exports = {
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/Vanilla/'
+    : '/'
+}
