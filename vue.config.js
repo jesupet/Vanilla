@@ -16,7 +16,5 @@ module.exports = {
   },
 };
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/Vanilla/'
-    : '/'
+  publicPath: "https://vanilla.cl/vanilla-2023"
 }
