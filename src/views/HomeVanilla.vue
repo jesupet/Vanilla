@@ -9,24 +9,24 @@
             <PurpleButton :to="'/'" :buttonText="'Ver Más'"/>
           </div>
         </div>
-        <div class="col-md-6 col-12">
+        <div class="col-md-6 col-12 d-none d-md-block">
           <img src="../assets/ampolleta.png" alt="" class="img-fluid">
         </div>
       </div>
     </header>
   </div>
   <WavesDiv/>
-  <div class="container-fluid px-0"> 
-    <section class="container px-0" id="lo-que-hacemos">
+  <div class="container-fluid"> 
+    <section class="container" id="lo-que-hacemos">
       <div class="row text-center">
         <div class="d-xl-none d-block text-end my-5">
           <h3 class="tittle1">Lo que <span class="purple-font tittle1">hacemos</span></h3>
           <p class="subtitle">para que tu negocio transmita lo genial que es</p>
         </div>
-        <div class="col-12 col-xl-4 fst-col text-center">
+        <div class="col-12 col-xl-4 fst-col text-center px-0">
           <ProductoVanilla/>
         </div>
-        <div class="col-12 col-xl-4 sec-col">
+        <div class="col-12 col-xl-4 sec-col px-0">
           <ProductoVanilla2/>
         </div>
         <div class="col-12 col-xl-4 thd-col text-xl-end text-center">
@@ -35,14 +35,16 @@
             <p class="subtitle">para que tu negocio transmita lo genial que es</p>
           </div>
           <img src="../assets/flecha-curva-1.svg" alt="flecha curva" class="d-none d-xl-block mt-5">
-          <div class="cta-cont">
+ 
             <CircleCTA/>
-          </div>
+
         </div>
       </div>
     </section>
-    <WavesDiv class="reflect-y"/>
-    <section id="nosotros" class="text-center container-fluid px-0 py-5">
+  </div>
+  <WavesDiv class="reflect-y"/>
+  <div class="container-fluid" id="nosotros">
+    <section class="text-center container py-5">
       <h3 class="tittle1">Algo<br><span class="purple-font tittle1">sobre nosotros</span></h3>
       <p class="subtitle">a ver si te hace clic!</p>
       <div class="row container mx-auto us-cont">
@@ -64,6 +66,8 @@
         </div>
       </div>
     </section>
+  </div>
+    
     <WavesDiv/>
     <section id="proyectos" class="container-fluid text-center py-5">
       <h3 class="tittle1">Algunos <span class="purple-font tittle1">proyectos</span></h3>
@@ -83,9 +87,9 @@
     </section>
     <WavesDiv class="reflect-y over"/>
     <div id="cta" class="container-fluid">
-      <div class="container d-flex mx-auto cta-box">
+      <div class="container d-flex justify-content-between mx-auto cta-box">
         <h3 class="tittle2 bold d-md-inline d-block">¿Tu negocio necesita<br><span class="tittle2 no-bold">expresar lo genial que es?</span></h3>
-        <img src="../assets/purple-arrow.svg" alt="flecha curva" class="d-md-flex d-none purple-arrow">
+        <img src="../assets/purple-arrow.svg" alt="flecha curva" class="d-xl-block d-none purple-arrow">
         <TransparentButton class="d-block" :to="''" :buttonText="'¡Trabajemos juntos!'"/>
       </div>
     </div>
@@ -129,7 +133,7 @@
         </div>
       </div>
     </section>
-  </div>
+
 </template>
 
 <script>
@@ -169,7 +173,9 @@ export default {
 }
 header {
   padding-top: 100px;
-  padding-left: 50px;
+  @media (min-width: 700px){
+    padding: 100px 0px 0px 50px;
+  }
 }
 .columna1-header {
   width: 70%;
@@ -195,6 +201,9 @@ header {
   background-color: #1b1629;
   color: #fff;
 }
+#cta {
+  position: relative;
+}
 .us-cont {
   padding: 50px 0px;
 }
@@ -207,7 +216,9 @@ header {
   background-color: rgba(0, 0, 0, 0.04);
 }
 .purple-arrow {
-  margin: -60px 0px 0px -60px;
+  position: absolute;
+  top: 0;
+  left: 52%;
 }
 @media (max-width: 768px) {
   .tittle2 {

@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <img class="olas-div img-fluid" src="../assets/olas_header.png" alt="">
+  <div class="waves-cont">
   </div>
 </template>
 
@@ -17,8 +16,11 @@ export default {
 
 
 <style scoped>
-.olas-div {
-  width: 100%;
-  border: 0px;
+.waves-cont {
+  height: 100px;
+  background-image: url('../assets/olas_header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 </style>
