@@ -6,7 +6,9 @@
         <h5 class="card-title tittle4">Asesoría Visual y Digital</h5>
       </div>
       <p class="card-text">Tal vez lo tuyo comienza por aquí, para que tengas claridad de donde está posicionado visual y digitalmente tu negocio,  hasta sugerencias de qué hacer.</p>
-      <a href="/" class="arrow_right"><font-awesome-icon icon="fa-arrow-right" size="3x"/></a>
+    </div>
+    <div class="d-flex justify-content-center align-content-center arrow-cont">
+      <ArrowRight :to="'/'"/>
     </div>
   </div>
   <div class="card text-center product-card-white mx-auto">
@@ -16,7 +18,9 @@
         <h5 class="card-title tittle4">Ecommerce en Shopify</h5>
       </div>
       <p class="card-text">Creemos fielmente que “pastelero a tus pasteles” y por ello nos asociamos con expertos en eccomerce para crear soluciones a tus requerimientos con los mejores.</p>
-      <a href="/" class="arrow_right_black"><font-awesome-icon icon="fa-arrow-right" size="3x"/></a>
+    </div>
+    <div class="d-flex justify-content-center align-content-center arrow-cont">
+      <ArrowRight :to="'/'" class="arrow-right arrow_right_black"/>
     </div>
   </div>
 <!--
@@ -35,9 +39,13 @@
 
 <script>
 import { mapState, mapGetters } from 'vuex'
+import ArrowRight from './buttons/ArrowRight.vue'
 
 export default {
   name: "ProductoVanilla2",
+  components :{
+    ArrowRight
+  },
   computed: {
     ...mapState(["products"]),
     ...mapGetters(['nextThreeElements'])
@@ -53,7 +61,6 @@ export default {
   }
   .product-card {
     width: 360px;
-    height: 360px;
     background-color: #6d44bc;
     color: #fff;
     border-radius: 25px;
@@ -73,12 +80,6 @@ export default {
   .card-text {
     font-size: 15px;
   }
-  .arrow_right {
-    color: #fff;
-    padding-top: 20px;
-    display: inline-block;
-    text-align: center;
-  }
   .product-card-white {
     width: 360px;
     height: 360px;
@@ -87,11 +88,5 @@ export default {
     border-radius: 25px;
     margin-bottom: 53px;
     border: 1px solid #000;
-  }
-  .arrow_right_black {
-    color: #000;
-    padding-top: 20px;
-    display: inline-block;
-    text-align: center;
   }
 </style>
