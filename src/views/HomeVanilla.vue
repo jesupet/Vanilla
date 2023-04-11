@@ -106,26 +106,26 @@
             <div class="col-xl-5 col-6 py-5">
               <ul class="px-0">
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Creativos</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Creativos</span>
                 </li>
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Confiables</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Confiables</span>
                 </li>
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Amigables</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Amigables</span>
                 </li>
               </ul>
             </div>
             <div class="col-xl-7 col-6 py-5 text-start">
               <ul class="px-0">
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Comprometidos</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Comprometidos</span>
                 </li>
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Profesionales</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Profesionales</span>
                 </li>
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check" class="p-3">Conectados</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Conectados</span>
                 </li>
               </ul>
             </div>
@@ -240,6 +240,20 @@ header {
   font-weight: 700;
   font-size: 25px;
 }
+.list-item img {
+  width: 30px;
+  margin: 10px;
+}
+@media (max-width: 500px){
+  .list-item img {
+    width: 20px;
+    margin: 5px;
+  }
+  .list-item {
+    font-size: 20px;
+  }
+}
+
 .purple-big-circle {
   position: absolute;
   z-index: -1;
