@@ -1,6 +1,6 @@
 <template>
     <router-link :to="to">
-      <svg width="50" height="23" viewBox="0 0 50 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="50" height="23" viewBox="0 0 50 23" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-right">
         <g clip-path="url(#clip0_519_3)">
           <path d="M0 11.07H47.85" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
           <path d="M37.36 21.44L47.73 11.07L37.36 0.710022" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
@@ -38,5 +38,10 @@ export default {
   .arrow_right_black svg path{
     stroke: #1b1629;
   }
-
+  /*.arrow-right {
+    transition: stroke 0.3s ease;
+  }
+  .arrow-right path:hover {
+    stroke: #1b1629; 
+  }*/
 </style>
