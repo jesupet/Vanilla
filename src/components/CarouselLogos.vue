@@ -1,16 +1,16 @@
 <template>
   <div id="carouselBrands" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-touch="true">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
+    <div class="carousel-inner carousel-inner-logos">
+      <div class="carousel-item active carousel-item-logos">
         <img src="../assets/clients_logos/lavandaclean-logo.png" class="img-fluid" alt="">
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item carousel-item-logos">
         <img src="../assets/clients_logos/makuwool-logo.png" class="img-fluid" alt="">
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item carousel-item-logos">
         <img src="../assets/clients_logos/ripp-logo.png" class="img-fluid" alt="">
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item carousel-item-logos">
         <img src="../assets/clients_logos/setup-logo.png" class="img-fluid" alt="">
       </div>
         <!--<div class="row">
@@ -77,21 +77,3 @@ export default ({
 })
 </script>
 
-<style scoped>
-#carouselBrands {
-  margin: 100px 0px 50px;
-}
-.carousel-inner {
-  padding: 70px;
-}
-@media (min-width: 750px) {
-  .carousel-inner {
-    display: flex;
-  }
-  .carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100%/4);
-  }
-}
-</style>

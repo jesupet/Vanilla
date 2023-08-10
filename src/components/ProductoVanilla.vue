@@ -6,9 +6,9 @@
         <h5 class="card-title tittle4">Identidad corporativa</h5>
       </div>
       <p class="card-text">¡Por aquí comienza todo y tu logo no lo es todo! Tu negocio necesita reflejar todo lo que es, lo que representa y seguir una línea grafica coherente.</p>
-    </div>
-    <div class="d-flex justify-content-center align-content-center arrow-cont">
-      <ArrowRight :to="'/'" ref="arrowRight" class="arrow-right"/>
+      <div class="d-flex justify-content-center align-content-center arrow-cont">
+        <ArrowRight :to="'/'" ref="arrowRight" class="arrow-right"/>
+      </div>
     </div>
   </div>
   <div class="card text-center product-card mx-auto" @mouseover="changeArrowColor2('#1b1629')" @mouseleave="changeArrowColor2('white')">
@@ -80,48 +80,3 @@ export default {
   }
 }
 </script>
-
-
-<style scoped>
-.card-body {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .product-card {
-    width: 360px;
-    height: 360px;
-    box-sizing: border-box;
-    background-color: #6d44bc;
-    color: #fff;
-    border-radius: 25px;
-    margin-bottom: 53px;
-  }
-  .product-card:hover, .product-card-black:hover {
-    background-color: transparent;
-    color: #1b1629;
-    border: 1px solid #6d44bc;
-  }
-  .prod-icon {
-    width: 25%;
-    margin-top: 10px;
-  }
-  .title-box {
-    padding: 1rem 3rem 0rem 3rem;
-    text-align: center;
-  }
-  .card-title {
-    font-size: 30px;
-  }
-  .card-text {
-    font-size: 15px;
-  }
-  .product-card-black {
-    width: 360px;
-    height: 360px;
-    box-sizing: border-box;
-    background-color: #1b1629;
-    color: #fff;
-    border-radius: 25px;
-    margin-bottom: 53px;
-  }
-</style>

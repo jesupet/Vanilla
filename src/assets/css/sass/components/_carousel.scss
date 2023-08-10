@@ -1,0 +1,31 @@
+#carouselBrands {
+  margin: 100px 0px 50px;
+}
+.carousel-inner-logos {
+  padding: 70px;
+}
+@media (min-width: 750px) {
+  .carousel-inner-logos {
+    display: flex;
+  }
+  .carousel-item-logos {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/4);
+  }
+}
+.carousel-brands {
+  width: 358px;
+  height: 358px;
+  margin: auto;
+}
+.carousel-inner-brands {
+    border-radius: 8%;
+    width: 358px;
+    height: 358px;
+}
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}

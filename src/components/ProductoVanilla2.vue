@@ -6,10 +6,11 @@
         <h5 class="card-title tittle4">Asesoría Visual y Digital</h5>
       </div>
       <p class="card-text">Tal vez lo tuyo comienza por aquí, para que tengas claridad de donde está posicionado visual y digitalmente tu negocio,  hasta sugerencias de qué hacer.</p>
+      <div class="d-flex justify-content-center align-content-center arrow-cont">
+        <ArrowRight :to="'/'" ref="arrowRight"/>
+      </div>
     </div>
-    <div class="d-flex justify-content-center align-content-center arrow-cont">
-      <ArrowRight :to="'/'" ref="arrowRight"/>
-    </div>
+    
   </div>
   <div class="card text-center product-card-white mx-auto" @mouseover="changeArrowColor2('white')" @mouseleave="changeArrowColor2('#1b1629')">
     <div class="card-body">
@@ -67,51 +68,5 @@ export default {
 
 
 <style scoped>
-.card-body {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  .product-card {
-    width: 360px;
-    background-color: #6d44bc;
-    color: #fff;
-    border-radius: 25px;
-    margin-bottom: 53px;
-  }
-  .product-card:hover {
-    background-color: transparent;
-    color: #1b1629;
-    border: 1px solid #6d44bc;
-  }
-  .product-card-white:hover {
-    background-color: #6d44bc;
-    color: #fff;
-    border: 0px solid transparent;
-  }
-  .prod-icon {
-    width: 25%;
-    margin-top: 10px;
-  }
-  .title-box {
-    padding: 1rem 3rem 0rem 3rem;
-    text-align: center;
-  }
-  .card-title {
-    font-size: 30px;
-  }
-  .card-text {
-    font-size: 15px;
-  }
-  .product-card-white {
-    width: 360px;
-    height: 360px;
-    background-color: #fff;
-    color: #1b1629;
-    border-radius: 25px;
-    margin-bottom: 53px;
-    border: 1px solid #1b1629;
-  }
-  .arrow_right_black svg path{
-    stroke: #1b1629;
-  }
+  
 </style>

@@ -13,14 +13,3 @@ export default {
   },
 }
 </script>
-
-
-<style scoped>
-.waves-cont {
-  height: 100px;
-  background-image: url('../assets/olas_header.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-</style>

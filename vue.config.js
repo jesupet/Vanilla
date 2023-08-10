@@ -15,6 +15,6 @@ module.exports = {
       });
   },
 };
-/*module.exports = {
-  publicPath: "https://vanilla.cl/vanilla-2023"
-}*/
+module.exports = {
+  publicPath: "/"
+}

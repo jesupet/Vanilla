@@ -1,0 +1,155 @@
+.btn-purple {
+  background-color: #6d44bc;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 24px 10px 24px;
+  text-transform: uppercase;
+}
+
+button:hover, .btn-purple-hover:hover {
+  text-decoration: none;
+  color: #6d44bc;
+  /* Reemplaza "red" con el color que desees */
+  background-color: #fff;
+  border-color: #6d44bc;
+}
+
+.waves-cont {
+  height: 100px;
+  background-image: url("@/assets/olas_header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-body {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.product-card {
+  width: 360px;
+  height: 400px;
+  box-sizing: border-box;
+  background-color: #6d44bc;
+  color: #fff;
+  border-radius: 25px;
+  margin-bottom: 53px;
+}
+
+.product-card:hover, .product-card-black:hover {
+  background-color: transparent;
+  color: #1b1629;
+  border: 1px solid #6d44bc;
+}
+
+.prod-icon {
+  width: 25%;
+  margin-top: 10px;
+}
+
+.title-box {
+  padding: 1rem 3rem 0rem 3rem;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 30px;
+}
+
+.card-text {
+  font-size: 15px;
+  padding-top: 1rem;
+}
+
+.product-card-black {
+  width: 360px;
+  height: 400px;
+  box-sizing: border-box;
+  background-color: #1b1629;
+  color: #fff;
+  border-radius: 25px;
+  margin-bottom: 53px;
+}
+
+.product-card-white:hover {
+  background-color: #6d44bc;
+  color: #fff;
+  border: 0px solid transparent;
+}
+
+.product-card-white {
+  width: 360px;
+  height: 400px;
+  background-color: #fff;
+  color: #1b1629;
+  border-radius: 25px;
+  margin-bottom: 53px;
+  border: 1px solid #1b1629;
+}
+
+.arrow_right_black svg path {
+  stroke: #1b1629;
+}
+
+.circle-box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #6d44bc;
+  border-radius: 50%;
+  padding: 40px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tittle4 {
+  font-size: 40px;
+  line-height: 2rem;
+}
+
+.cont-btn {
+  position: relative;
+}
+
+.btn-purple {
+  margin-top: -25px;
+}
+
+#carouselBrands {
+  margin: 100px 0px 50px;
+}
+
+.carousel-inner-logos {
+  padding: 70px;
+}
+
+@media (min-width: 750px) {
+  .carousel-inner-logos {
+    display: flex;
+  }
+
+  .carousel-item-logos {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 25%;
+  }
+}
+.carousel-brands {
+  width: 358px;
+  height: 358px;
+  margin: auto;
+}
+
+.carousel-inner-brands {
+  border-radius: 8%;
+  width: 358px;
+  height: 358px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
