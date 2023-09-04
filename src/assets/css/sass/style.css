@@ -1,3 +1,187 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Source+Serif+Pro:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  list-style: none;
+}
+
+nav {
+  padding: 30px;
+}
+
+a, ul {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, button:hover router-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+/* Títulos */
+.tittle1 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 71px;
+}
+
+.tittle2 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 55px;
+  margin: 0px;
+}
+
+.tittle3 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 50px;
+  margin: 0px;
+  font-weight: 700;
+}
+
+.tittle4 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 75px;
+}
+
+/* Colores */
+.white-font {
+  color: #fff;
+}
+
+.purple-font {
+  color: #6d44bc;
+}
+
+/* Styles */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.no-bold {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+nav {
+  background-color: #1b1629;
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: 0px;
+  color: #fff;
+}
+
+.logo-navbar {
+  height: 70px;
+  width: auto;
+  margin: 30px;
+}
+
+.nav-item {
+  padding: 20px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-link:hover {
+  color: #6d44bc;
+}
+
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0px;
+}
+
+.rounded-pill {
+  text-align: center;
+}
+
+.home {
+  background-color: #1b1629;
+  color: #fff;
+}
+
+.columna1-header {
+  width: 70%;
+  margin-left: 30px;
+  padding: 48px;
+}
+
+.amp-image {
+  width: 70%;
+}
+
+footer {
+  background-color: #1b1629;
+  color: #fff;
+  min-height: 70vh;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.rrss-cont {
+  margin-top: 20px;
+}
+
+.list-menu, .mayus-p {
+  list-style: none;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.list-menu > li, .mayus-p, .txt-cont {
+  padding-top: 30px;
+}
+
+.big-num {
+  font-size: 25px;
+}
+
+.wsp-icon {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 28px;
+  margin-bottom: 1em;
+  margin-left: 0.5em;
+}
+
+.txt-cont {
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .txt-cont {
+    width: 100%;
+    padding-bottom: 100px;
+  }
+}
+
+.right-cont {
+  padding: 0px 50px;
+}
+
 .btn-purple {
   background-color: #6d44bc;
   color: #fff;
@@ -6,7 +190,7 @@
   text-transform: uppercase;
 }
 
-button:hover, .btn-purple-hover:hover {
+.btn-purple:hover, .btn-purple-hover:hover {
   text-decoration: none;
   color: #6d44bc;
   /* Reemplaza "red" con el color que desees */
@@ -14,12 +198,34 @@ button:hover, .btn-purple-hover:hover {
   border-color: #6d44bc;
 }
 
+.btn-transparent {
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  margin: 30px;
+}
+
+.btn-transparent:hover {
+  text-decoration: none;
+  color: #fff;
+  /* Reemplaza "red" con el color que desees */
+  background-color: #6d44bc;
+  border: 0px;
+}
+
 .waves-cont {
-  height: 100px;
+  height: 130px;
   background-image: url("@/assets/olas_header.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.reflect-y {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
 }
 
 .card-body {
@@ -30,7 +236,8 @@ button:hover, .btn-purple-hover:hover {
 .product-card {
   width: 360px;
   height: 400px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #6d44bc;
   color: #fff;
   border-radius: 25px;
@@ -65,7 +272,8 @@ button:hover, .btn-purple-hover:hover {
 .product-card-black {
   width: 360px;
   height: 400px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #1b1629;
   color: #fff;
   border-radius: 25px;
@@ -98,8 +306,12 @@ button:hover, .btn-purple-hover:hover {
   border: 1px solid #6d44bc;
   border-radius: 50%;
   padding: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .tittle4 {
@@ -111,7 +323,7 @@ button:hover, .btn-purple-hover:hover {
   position: relative;
 }
 
-.btn-purple {
+.cont-btn .btn-purple {
   margin-top: -25px;
 }
 
@@ -125,15 +337,19 @@ button:hover, .btn-purple-hover:hover {
 
 @media (min-width: 750px) {
   .carousel-inner-logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
-
   .carousel-item-logos {
     display: block;
     margin-right: 0;
-    flex: 0 0 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100%/4);
+            flex: 0 0 calc(100%/4);
   }
 }
+
 .carousel-brands {
   width: 358px;
   height: 358px;
@@ -152,4 +368,84 @@ button:hover, .btn-purple-hover:hover {
   border-radius: 100%;
 }
 
+.box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.box:hover img {
+  opacity: 80%;
+}
+
+.box {
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.client-card {
+  background-color: #fff;
+  color: #000;
+  border: 0px;
+  border-radius: 25px;
+  margin: 53px 20px;
+  width: 23rem;
+  -webkit-box-shadow: 10px 10px #cbc9c9;
+          box-shadow: 10px 10px #cbc9c9;
+}
+
+.card-body {
+  padding: 50px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+h5 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 300px;
+}
+
+.card-text {
+  font-size: 15px;
+}
+
+.box-img {
+  padding: 20px;
+}
+
+.whitebg {
+  background-color: #fff;
+  color: #000;
+}
+
+.purplebg {
+  background-color: #6d44bc;
+  color: #fff;
+}
+
+.carousel-control-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.carousel-control-prev {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 /*# sourceMappingURL=style.css.map */

@@ -40,22 +40,3 @@ export default {
   },
 }
 </script>
-
-
-<style scoped>
-.box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 25px;
-  opacity: 1;
-  transition: 0.3s;
-}
-.box:hover img {
-  opacity: 80%;
-}
-.box {
-  padding: 8px;
-  box-sizing: border-box;
-}
-</style>

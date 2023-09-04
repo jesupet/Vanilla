@@ -40,5 +40,6 @@ export default{
   .wsp-icon {
     width: 35px;
     margin-left: 5px;
+    margin-bottom: 0px;
   }
 </style>

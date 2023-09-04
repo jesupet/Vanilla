@@ -19,10 +19,11 @@
         <h5 class="card-title tittle4">Ecommerce en Shopify</h5>
       </div>
       <p class="card-text">Creemos fielmente que “pastelero a tus pasteles” y por ello nos asociamos con expertos en eccomerce para crear soluciones a tus requerimientos con los mejores.</p>
+      <div class="d-flex justify-content-center align-content-center arrow-cont">
+        <ArrowRight :to="'/'" class="arrow_right_black" ref="arrowRight2"/>
+      </div>
     </div>
-    <div class="d-flex justify-content-center align-content-center arrow-cont">
-      <ArrowRight :to="'/'" class="arrow_right_black" ref="arrowRight2"/>
-    </div>
+    
   </div>
 <!--
   <div class="card text-center product-card mx-auto" v-for="(product, index) in nextThreeElements" :key="index">

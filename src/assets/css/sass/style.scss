@@ -1,5 +1,17 @@
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navbar';
+@import 'layout/header';
+@import 'layout/footer';
+
 @import 'components/buttons';
 @import 'components/wave';
 @import 'components/producto';
 @import 'components/circlecta';
 @import 'components/carousel';
+@import 'components/grid';
+@import 'components/card';
+
+@import 'vendors/custom';
+

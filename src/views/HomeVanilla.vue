@@ -2,15 +2,15 @@
   <div class="home container-fluid">
     <header class="container text-center">
       <div class="row">
-        <div class="col-md-6 col-12">
+        <div class="col-lg-6 col-12">
           <div class="columna1-header text-start">
             <h1 class="tittle1 white-font">Somos una agencia creativa<span class="tittle1 purple-font">.</span></h1>
             <p class="mb-3">Potenciamos la identidad visual de negocios en crecimiento, para darle una apariencia memorable a lo que tu marca está transitando actualmente.</p>
             <PurpleButton :to="'/'" :buttonText="'Ver Más'"/>
           </div>
         </div>
-        <div class="col-md-6 col-12 d-none d-md-block">
-          <img src="../assets/ampolleta.png" alt="" class="img-fluid">
+        <div class="col-lg-6 col-12 d-none d-md-block">
+          <img src="../assets/ampolleta.png" alt="" class="amp-image">
         </div>
       </div>
     </header>
@@ -82,8 +82,9 @@
       <p class="subtitle">en nuestro talento y compromiso</p>
       <div class="row container mx-auto">
         <ClientCard/>
-        <CarouselLogos/>
+        <CarouselLogos :logoGroups="logoGroups"/>
       </div>
+      
     </section>
     <WavesDiv class="reflect-y over"/>
     <div id="cta" class="container-fluid">
@@ -137,6 +138,8 @@
 </template>
 
 <script>
+import {logos} from '@/store/logos'
+
 import ProductoVanilla from '../components/ProductoVanilla.vue'
 import ProductoVanilla2 from '../components/ProductoVanilla2.vue'
 import CircleCTA from '../components/CircleCTA.vue'
@@ -147,6 +150,7 @@ import ClientCard from '../components/ClientCard.vue'
 import TransparentButton from '@/components/buttons/TransparentButton.vue'
 import PurpleButton from '../components/buttons/PurpleButton.vue'
 import CarouselLogos from '../components/CarouselLogos.vue'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'HomeVanilla',
@@ -161,26 +165,27 @@ export default {
     TransparentButton,
     PurpleButton,
     CarouselLogos
+  },
+  data() {
+    return{
+      logos: logos,
+    }
+  },
+  computed: {
+    ...mapGetters(["logoGroups"]),
+  },
+  created() {
+    this.fetchLogos();
+  },
+  methods: {
+    ...mapActions(["fetchLogos"])
   }
+
 }
 </script>
 
 <style scoped>
-.home {
-  background-color: #1b1629;
-  color: #fff;
-  min-height: 90vh;
-}
-header {
-  padding-top: 100px;
-  @media (min-width: 700px){
-    padding: 100px 0px 0px 50px;
-  }
-}
-.columna1-header {
-  width: 70%;
-  margin-left: 30px;
-}
+
  
 @media (min-width: 1200px){
   .sec-col {

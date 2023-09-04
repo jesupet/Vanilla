@@ -21,20 +21,3 @@ export default {
 }
 </script>
 
-<style scoped>
-.btn-transparent {
-  border: 1px solid #fff;
-  padding: 5px 20px;
-  color: #fff;
-  font-size: 25px;
-  letter-spacing: 0.1em;
-  margin: 30px;
-}
-button:hover {
-  text-decoration: none;
-  color: #fff; /* Reemplaza "red" con el color que desees */
-  background-color: #6d44bc;
-  border: 0px;
-}
-
-</style>

@@ -18,9 +18,9 @@
         <h5 class="card-title tittle4">Diseño digital</h5>
       </div>
       <p class="card-text">Uff, el mundo de lo digital seguro te tiene de cabeza. Y si! pues hay que estar y ojalá de la mejor manera pues la competencia es ardua.</p>
-    </div>
-    <div class="d-flex justify-content-center align-content-center">
+      <div class="d-flex justify-content-center align-content-center">
       <ArrowRight :to="'/'" ref="arrowRight2"/>
+    </div>    
     </div>
   </div>
   <div class="card text-center product-card-black mx-auto" @mouseover="changeArrowColor3('#1b1629')" @mouseleave="changeArrowColor3('white')">
@@ -30,10 +30,11 @@
           <h5 class="card-title tittle4">Apoyo agencias</h5>
         </div>
         <p class="card-text">A lo largo de los años hemos apoyado a diferentes agencias y áreas de marketing de grandes empresas, que en algunos periodos necesitan externalizar sus proyectos.</p>
-    </div>
     <div class="d-flex justify-content-center align-content-center">
       <ArrowRight :to="'/'" ref="arrowRight3"/>
     </div>
+    </div>
+    
   </div>
   <!--<div class="card text-center product-card mx-auto" v-for="(product, index) in firstThreeElements" :key="index">
     <div class="card-body">

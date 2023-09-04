@@ -1,0 +1,44 @@
+/* Títulos */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Source+Serif+Pro:wght@400;700&display=swap');
+
+.tittle1 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 71px;
+}
+.tittle2 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 55px;
+  margin: 0px;
+}
+.tittle3 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 50px;
+  margin: 0px;
+  font-weight: 700;
+}
+.tittle4 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 75px;
+}
+
+/* Colores */
+.white-font {
+  color:#fff;
+}
+.purple-font {
+  color: #6d44bc;
+}
+
+/* Styles */
+.uppercase {
+  text-transform: uppercase;
+}
+.no-bold {
+  font-weight: 300;
+}
+.bold {
+  font-weight: 700;
+}

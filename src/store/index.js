@@ -2,15 +2,13 @@ import { createStore } from 'vuex'
 
 import products from "./products.json"
 import clients from "./clients.json"
-import logos from "./logos.json"
-
 
 export default createStore({
   state: {
     products: products,
     clients: clients,
-    items: logos,
     groups: [],
+    logos: [],
   },
   getters: {
     firstThreeElements: state => {
@@ -22,22 +20,37 @@ export default createStore({
     firstThreeClients: state => {
       return state.clients.slice(0,3);
     },
-    carouselItems: state => {
-      // En este ejemplo, mostraremos 3 items por slide
-      const itemsPerSlide = 4;
-      const slideGroups = [];
-      for (let i = 0; i < state.items.length; i += itemsPerSlide) {
-        slideGroups.push(state.items.slice(i, i + itemsPerSlide));
+    logoGroups(state) {
+      // Divide los logos en grupos de 4 para el carrusel
+      const groups = [];
+      for (let i = 0; i < state.logos.length; i += 4) {
+        groups.push(state.logos.slice(i, i + 4));
       }
-      return slideGroups;
+      return groups;
+    },
+  },
+  actions: {
+    fetchLogos({ commit }) {
+      // Aquí puedes realizar una llamada API o cargar los logos de alguna otra fuente
+      const logos = [
+        { url: require("@/assets/clients_logos/lavandaclean-logo.png"), alt: "Logo 1" },
+        { url: require("@/assets/clients_logos/makuwool-logo.png"), alt: "Logo 2" },
+        { url: require("@/assets/clients_logos/ripp-logo.png"), alt: "Logo 3" },
+        { url: require("@/assets/clients_logos/setup-logo.png"), alt: "Logo 4" },
+        { url: require("@/assets/clients_logos/setup-logo.png"), alt: "Logo 4" },
+        // Agrega más logos según sea necesario
+      ];
+
+      commit("setLogos", logos);
     },
   },
   mutations: {
     setProducts: (state, products) => {
       state.products = products
     },
-  },
-  actions: {
+    setLogos(state, logos) {
+      state.logos = logos;
+    },
   },
   modules: {
   }
