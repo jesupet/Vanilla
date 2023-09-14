@@ -6,6 +6,7 @@
   font-weight: 700;
   font-size: 75px;
   line-height: 71px;
+  overflow-y: hidden;
 }
 .tittle2 {
   font-family: 'Source Serif Pro', serif;
@@ -22,6 +23,10 @@
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
   font-size: 75px;
+}
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 /* Colores */

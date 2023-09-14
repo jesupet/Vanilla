@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center pb-4">
+  <div class="text-center pb-4 big-cont">
     <div class="circle-box text-center">
       <div>
         <h4 class="tittle4 purple-font">¿Necesitas refrescar la imagen de tu negocio?</h4>

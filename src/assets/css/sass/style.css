@@ -7,6 +7,7 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   list-style: none;
+  overflow-x: hidden;
 }
 
 nav {
@@ -33,6 +34,7 @@ p {
   font-weight: 700;
   font-size: 75px;
   line-height: 71px;
+  overflow-y: hidden;
 }
 
 .tittle2 {
@@ -52,6 +54,11 @@ p {
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
   font-size: 75px;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 /* Colores */
@@ -89,7 +96,7 @@ nav {
 .logo-navbar {
   height: 70px;
   width: auto;
-  margin: 30px;
+  margin: 30px 0px;
 }
 
 .nav-item {
@@ -123,10 +130,12 @@ nav {
   color: #fff;
 }
 
-.columna1-header {
-  width: 70%;
-  margin-left: 30px;
-  padding: 48px;
+@media (min-width: 992px) {
+  .columna1-header {
+    width: 70%;
+    margin-left: 30px;
+    padding: 48px;
+  }
 }
 
 .amp-image {
@@ -231,10 +240,12 @@ footer {
 .card-body {
   padding-right: 20px;
   padding-left: 20px;
+  position: relative;
 }
 
 .product-card {
   width: 360px;
+  max-width: 90vw;
   height: 400px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -300,6 +311,14 @@ footer {
   stroke: #1b1629;
 }
 
+.arrow-cont {
+  margin-top: 30px;
+}
+
+.big-cont {
+  position: relative;
+}
+
 .circle-box {
   width: 300px;
   height: 300px;
@@ -312,19 +331,21 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: hidden;
 }
 
 .tittle4 {
   font-size: 40px;
-  line-height: 2rem;
+  line-height: 2.6rem;
+  overflow-y: hidden;
+  margin-bottom: 0px;
 }
 
 .cont-btn {
-  position: relative;
-}
-
-.cont-btn .btn-purple {
+  position: absolute;
+  z-index: 10;
   margin-top: -25px;
+  right: 33.8%;
 }
 
 #carouselBrands {
@@ -400,8 +421,9 @@ footer {
           box-shadow: 10px 10px #cbc9c9;
 }
 
-.card-body {
+.client-card .card-body {
   padding: 50px;
+  overflow-y: hideen;
 }
 
 .card-title {

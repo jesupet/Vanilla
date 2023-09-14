@@ -8,7 +8,7 @@
         <h4 class="card-title tittle4">Remax Central</h4>
         <h5 class="card-title">Verónica Irarrázaval</h5>
       </div>
-      <p class="card-text">e encantó trabajar con Vanilla, ya que rápidamente captaron la idea de lo que estábamos buscando, con una excelente disposición a encontrar las soluciones de nuestros requerimientos.</p>
+      <p class="card-text">Me encantó trabajar con Vanilla, ya que rápidamente captaron la idea de lo que estábamos buscando, con una excelente disposición a encontrar las soluciones de nuestros requerimientos.</p>
     </div>
   </div>
   <div class="card text-center mx-auto client-card purplebg">

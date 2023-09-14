@@ -198,10 +198,6 @@ export default {
 .cta-cont {
   padding:50px;
 }
-.subtitle {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
 #nosotros, #cta {
   background-color: #1b1629;
   color: #fff;

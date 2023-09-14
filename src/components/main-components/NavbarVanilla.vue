@@ -1,7 +1,7 @@
 <template>
   <PreHeaderVanilla/>
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand" href="#"><img class="logo-navbar" src="../../assets/vanilla_logos/logo_vanilla_navbar.png" alt="logo vanilla"></a>
       <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon toggler-icon"></span>

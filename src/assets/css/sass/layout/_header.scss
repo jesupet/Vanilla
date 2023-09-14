@@ -3,9 +3,11 @@
   color: #fff;
 }
 .columna1-header {
-  width: 70%;
-  margin-left: 30px;
-  padding: 48px;
+  @media (min-width: $big-tablet-width){
+    width: 70%;
+    margin-left: 30px;
+    padding: 48px;
+  }
 }
 .amp-image {
   width: 70%;

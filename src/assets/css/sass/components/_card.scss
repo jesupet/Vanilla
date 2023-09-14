@@ -7,9 +7,13 @@
   width: 23rem;
   box-shadow: 10px 10px rgb(203, 201, 201);
 }
-.card-body {
-  padding: 50px;
+.client-card {
+  .card-body {
+    padding: 50px;
+    overflow-y: hideen;
+  }
 }
+
 .card-title {
   font-size: 20px;
 }

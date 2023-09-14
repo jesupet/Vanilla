@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 <template>
   <div class="card text-center product-card mx-auto" @mouseover="changeArrowColor('#1b1629')" @mouseleave="changeArrowColor('white')">
     <div class="card-body text-center">
@@ -6,7 +14,7 @@
         <h5 class="card-title tittle4">Identidad corporativa</h5>
       </div>
       <p class="card-text">¡Por aquí comienza todo y tu logo no lo es todo! Tu negocio necesita reflejar todo lo que es, lo que representa y seguir una línea grafica coherente.</p>
-      <div class="d-flex justify-content-center align-content-center arrow-cont">
+      <div class="arrow-cont">
         <ArrowRight :to="'/'" ref="arrowRight" class="arrow-right"/>
       </div>
     </div>
@@ -18,7 +26,7 @@
         <h5 class="card-title tittle4">Diseño digital</h5>
       </div>
       <p class="card-text">Uff, el mundo de lo digital seguro te tiene de cabeza. Y si! pues hay que estar y ojalá de la mejor manera pues la competencia es ardua.</p>
-      <div class="d-flex justify-content-center align-content-center">
+      <div class="arrow-cont">
       <ArrowRight :to="'/'" ref="arrowRight2"/>
     </div>    
     </div>
@@ -30,7 +38,7 @@
           <h5 class="card-title tittle4">Apoyo agencias</h5>
         </div>
         <p class="card-text">A lo largo de los años hemos apoyado a diferentes agencias y áreas de marketing de grandes empresas, que en algunos periodos necesitan externalizar sus proyectos.</p>
-    <div class="d-flex justify-content-center align-content-center">
+    <div class="arrow-cont">
       <ArrowRight :to="'/'" ref="arrowRight3"/>
     </div>
     </div>

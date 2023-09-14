@@ -6,7 +6,7 @@
         <h5 class="card-title tittle4">Asesoría Visual y Digital</h5>
       </div>
       <p class="card-text">Tal vez lo tuyo comienza por aquí, para que tengas claridad de donde está posicionado visual y digitalmente tu negocio,  hasta sugerencias de qué hacer.</p>
-      <div class="d-flex justify-content-center align-content-center arrow-cont">
+      <div class="arrow-cont">
         <ArrowRight :to="'/'" ref="arrowRight"/>
       </div>
     </div>
@@ -14,12 +14,12 @@
   </div>
   <div class="card text-center product-card-white mx-auto" @mouseover="changeArrowColor2('white')" @mouseleave="changeArrowColor2('#1b1629')">
     <div class="card-body">
-      <img class="prod-icon" src="../assets/prod_icons/ecom_shop_icon.png" alt="">
+      <img class="my-3" src="../assets/prod_icons/ecom_shop_icon.png" alt="">
       <div class="title-box">
         <h5 class="card-title tittle4">Ecommerce en Shopify</h5>
       </div>
       <p class="card-text">Creemos fielmente que “pastelero a tus pasteles” y por ello nos asociamos con expertos en eccomerce para crear soluciones a tus requerimientos con los mejores.</p>
-      <div class="d-flex justify-content-center align-content-center arrow-cont">
+      <div class="arrow-cont">
         <ArrowRight :to="'/'" class="arrow_right_black" ref="arrowRight2"/>
       </div>
     </div>
