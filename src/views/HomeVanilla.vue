@@ -82,7 +82,7 @@
       <p class="subtitle">en nuestro talento y compromiso</p>
       <div class="row container mx-auto">
         <ClientCard/>
-        <CarouselLogos :logoGroups="logoGroups"/>
+        <CarouselLogos :logoGroups="logoGroups" :isMobile="isMobile"/>
       </div>
       
     </section>
@@ -91,7 +91,17 @@
       <div class="container d-flex justify-content-between mx-auto cta-box">
         <h3 class="tittle2 bold d-md-inline d-block">¿Tu negocio necesita<br><span class="tittle2 no-bold">expresar lo genial que es?</span></h3>
         <img src="../assets/purple-arrow.svg" alt="flecha curva" class="d-xl-block d-none purple-arrow">
-        <TransparentButton class="d-block" :to="''" :buttonText="'¡Trabajemos juntos!'"/>
+        <TransparentButton 
+          class="d-block"
+          :buttonText="'¡Trabajemos juntos!'"
+          data-tally-open="w8LOkx" 
+          data-tally-layout="modal" 
+          data-tally-width="384" 
+          data-tally-align-left="1" 
+          data-tally-emoji-text="👋" 
+          data-tally-emoji-animation="wave" 
+          data-tally-auto-close="2000"
+        />
       </div>
     </div>
     <WavesDiv/>
@@ -169,17 +179,27 @@ export default {
   data() {
     return{
       logos: logos,
+      isMobile: window.innerWidth <= 768, // Detecta el ancho de la pantalla al principio
     }
   },
   computed: {
     ...mapGetters(["logoGroups"]),
   },
   created() {
+    window.addEventListener("resize", this.handleResize);
     this.fetchLogos();
   },
   methods: {
-    ...mapActions(["fetchLogos"])
-  }
+    ...mapActions(["fetchLogos"]),
+    handleResize() {
+      // Detecta el cambio en el ancho de la pantalla
+      this.isMobile = window.innerWidth <= 768;
+      console.log(window.innerWidth)
+    },
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  },
 
 }
 </script>

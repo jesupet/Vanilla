@@ -1,5 +1,6 @@
 .big-cont {
-  position: relative;
+  display: grid;
+  place-items: center;
 }
 .circle-box {
   width: 300px;
@@ -18,8 +19,5 @@
   margin-bottom: 0px;
 }
 .cont-btn {
-  position: absolute;
-  z-index: 10;
-  margin-top: -25px;
-  right: 33.8%;
+  margin: -25px;
 }

@@ -7,7 +7,17 @@
     </div>
     <div class="text-center cont-btn">
       
-      <PurpleButton :to="'/'" :buttonText="'Hablemos!'" :class="'btn-purple-hover'"/>
+      <PurpleButton 
+        :buttonText="'Hablemos!'" 
+        :class="'btn-purple-hover'"
+        data-tally-open="w8LOkx" 
+        data-tally-layout="modal" 
+        data-tally-width="384" 
+        data-tally-align-left="1" 
+        data-tally-emoji-text="👋" 
+        data-tally-emoji-animation="wave" 
+        data-tally-auto-close="2000"
+      />
     </div>
   </div>
 </template>

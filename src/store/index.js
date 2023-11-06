@@ -23,8 +23,10 @@ export default createStore({
     logoGroups(state) {
       // Divide los logos en grupos de 4 para el carrusel
       const groups = [];
-      for (let i = 0; i < state.logos.length; i += 4) {
-        groups.push(state.logos.slice(i, i + 4));
+      const groupSize = window.innerWidth <= 768 ? 2 : 4;
+
+      for (let i = 0; i < state.logos.length; i += groupSize) {
+        groups.push(state.logos.slice(i, i + groupSize));
       }
       return groups;
     },

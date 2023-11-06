@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 <template>
   <div class="card text-center product-card mx-auto" @mouseover="changeArrowColor('#1b1629')" @mouseleave="changeArrowColor('white')">
     <div class="card-body text-center">

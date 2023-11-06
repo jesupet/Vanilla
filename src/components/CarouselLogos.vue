@@ -3,8 +3,8 @@
     <div class="carousel-inner">
       <div v-for="(group, index) in logoGroups" :key="index" class="carousel-item" :class="{ 'active': index === 0 }">
         <div class="row">
-          <div v-for="(logo, logoIndex) in group" :key="logoIndex" class="col-3">
-            <img :src="logo.url" :alt="logo.alt" class="img-fluid">
+          <div v-for="(logo, logoIndex) in group" :key="logoIndex" :class="getColumnClass()">
+            <img :src="logo.url" :alt="logo.alt" class="img-fluid brand-logo">
           </div>
         </div>
       </div>
@@ -35,7 +35,17 @@ export default {
     logoGroups: {
       type: Array,
       required: true,
+    },
+    isMobile: {
+      type: Boolean,
+      required: true,
     }
+  },
+  methods: {
+    getColumnClass() {
+      // Condiciona la clase CSS de las columnas según la propiedad 'isMobile' en las props
+      return this.isMobile ? "col-6" : "col-md-3";
+    },
   },
 }
 </script>

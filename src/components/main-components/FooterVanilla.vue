@@ -7,13 +7,13 @@
           <img src="../../assets/vanilla_logos/logo-vanilla-bajada.png" alt="logo con bajada">
           <div class="rrss-cont justify-content-end">
             <div class="p-1 d-inline">
-              <a href=""><img src="../../assets/rrss_logos/facebook-purple-logo.png" alt="facebook logo"></a>
+              <a href="https://www.facebook.com/vanilla.diseno/" target="_blank"><img src="../../assets/rrss_logos/facebook-purple-logo.png" alt="facebook logo"></a>
             </div>
             <div class="p-1 d-inline">
-              <a href=""><img src="../../assets/rrss_logos/instagram-purple-logo.png" alt="instagram logo"></a>
+              <a href="https://www.instagram.com/vanilladiseno/" target="_blank"><img src="../../assets/rrss_logos/instagram-purple-logo.png" alt="instagram logo"></a>
             </div>
             <div class="p-1 d-inline">
-              <a href=""><img src="../../assets/rrss_logos/linkedin-purple-logo.png" alt="linkedin logo"></a>
+              <a href="https://www.linkedin.com/company/vanilladiseno" target="_blank"><img src="../../assets/rrss_logos/linkedin-purple-logo.png" alt="linkedin logo"></a>
             </div>
           </div>          
         </div>
@@ -33,7 +33,17 @@
                 <a href="">Han Confiado</a>
               </li>
               <li>
-                <button type="button" class="btn btn-purple rounded-pill">
+                <button 
+                  type="button" 
+                  class="btn btn-purple rounded-pill"
+                  data-tally-open="w8LOkx" 
+                  data-tally-layout="modal" 
+                  data-tally-width="384" 
+                  data-tally-align-left="1" 
+                  data-tally-emoji-text="👋" 
+                  data-tally-emoji-animation="wave" 
+                  data-tally-auto-close="2000"
+                >
                   <router-link class="nav-link" to="/">Hablemos!</router-link>
                 </button>
               </li>
@@ -45,8 +55,10 @@
         <div class="">
           <p class="mayus-p">Contáctanos</p>
           <div>
-            <p class="big-num d-inline">+56 9 8862 5328</p>
-            <img src="../../assets/rrss_logos/whatsapp_icon.png" alt="" class="wsp-icon d-inline">
+            <a href="https://wa.me/56988625328?text=Hola!%20Me%20gustaría%20saber%20más%20sobre%20Vanilla" target="_blank">
+              <p class="big-num d-inline">+56 9 8862 5328</p>
+              <img src="../../assets/rrss_logos/whatsapp_icon.png" alt="" class="wsp-icon d-inline">
+            </a>
           </div>
           <p class="mayus-p">Somos de Chile, y podemos trabajar para todo el mundo!</p>
           <div class="txt-cont">

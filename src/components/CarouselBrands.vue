@@ -7,13 +7,13 @@
         </div>
         <div class="carousel-inner carousel-inner-brands">
           <div class="carousel-item active">
-            <img src="../assets/projects_img/lavanda_clean_sq.png" class="d-block w-70 mx-auto" alt="lavanda clean logo">
+            <img src="../assets/projects_img/lavanda_clean_sq.png" class="d-block mx-auto" alt="lavanda clean logo">
           </div>
           <div class="carousel-item">
-            <img src="../assets/projects_img/lavanda_clean.png" class="d-block w-70 mx-auto" alt="lavanda clean tarjetas presentacion">
+            <img src="../assets/projects_img/lavanda_clean.png" class="d-block mx-auto" alt="lavanda clean tarjetas presentacion">
           </div>
           <div class="carousel-item">
-            <img src="../assets/projects_img/makuwool_sq.png" class="d-block w-70 mx-auto" alt="makuwool tarjeta presentacion">
+            <img src="../assets/projects_img/makuwool_sq.png" class="d-block mx-auto" alt="makuwool tarjeta presentacion">
           </div>
         </div>
       </div>
