@@ -82,7 +82,7 @@
       <p class="subtitle">en nuestro talento y compromiso</p>
       <div class="row container mx-auto">
         <ClientCard/>
-        <CarouselLogos :logoGroups="logoGroups" :isMobile="isMobile"/>
+        <CarouselLogos :logoGroups="logoGroups" :isMobile="isMobile" class="mt-5"/>
       </div>
       
     </section>

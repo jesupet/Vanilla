@@ -44,7 +44,7 @@ export default {
   methods: {
     getColumnClass() {
       // Condiciona la clase CSS de las columnas según la propiedad 'isMobile' en las props
-      return this.isMobile ? "col-6" : "col-md-3";
+      return this.isMobile ? "col-12" : "col-md-3";
     },
   },
 }
