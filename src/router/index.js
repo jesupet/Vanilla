@@ -1,11 +1,17 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeVanilla from '../views/HomeVanilla.vue'
+import HomeTemporal from '../views/HomeTemporal.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeVanilla
+  },
+  {
+    path: '/pre-home',
+    name: 'pre-home',
+    component: HomeTemporal
   },
 ]
 

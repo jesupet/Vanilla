@@ -465,6 +465,57 @@ h5 {
   color: #fff;
 }
 
+.pre-home {
+  max-height: 100vh;
+}
+
+.pre-home-header {
+  padding-top: 100px;
+  padding-bottom: 300px;
+}
+
+.pre-home-header .tittle-cont {
+  padding: 0px 30px;
+}
+
+@media (min-width: 1400px) {
+  .pre-home-header .tittle-cont {
+    padding: 0px 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pre-home-header .tittle-cont {
+    padding: 0px 250px;
+  }
+}
+
+.logo-navbar-temp {
+  width: 70px;
+  margin: 30px;
+}
+
+.footer-temp {
+  background-color: #763BFF;
+  color: #fff;
+  min-height: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.waves-cont-purple {
+  height: 130px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -1px;
+  padding-bottom: 70vh;
+}
+
+.rrss {
+  padding-bottom: 50px;
+}
+
 .carousel-control-next {
   display: -webkit-box;
   display: -ms-flexbox;

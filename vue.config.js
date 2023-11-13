@@ -16,5 +16,5 @@ module.exports = {
   },
 };
 module.exports = {
-  publicPath: "/"
+  publicPath: "/pre-home"
 }

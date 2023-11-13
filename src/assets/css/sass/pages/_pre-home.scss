@@ -1,0 +1,39 @@
+.pre-home {
+  max-height: 100vh;
+}
+.pre-home-header {
+  padding-top: 100px;
+  padding-bottom: 300px;
+  .tittle-cont {
+    @media (min-width: 1400px){
+      padding: 0px 350px;
+    }
+    @media (min-width: $desktop-width){
+      padding: 0px 250px;
+    }
+    padding: 0px 30px;
+  }
+}
+.logo-navbar-temp {
+  width: 70px;
+  margin: 30px;
+}
+.footer-temp {
+  background-color: #763BFF;
+  color: #fff;
+  min-height: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.waves-cont-purple {
+  height: 130px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -1px;
+  padding-bottom: 70vh;
+ //margin: -5px 0px;
+}
+.rrss {
+  padding-bottom: 50px;
+}
