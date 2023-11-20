@@ -250,7 +250,7 @@ footer {
 .btn-fuchsia:hover {
   color: #FF3A81;
   border-color: #FF3A81;
-  background-color: transparent;
+  background-color: #fff;
   text-decoration: none;
 }
 
@@ -516,7 +516,7 @@ h5 {
 }
 
 .card-prehome .card-text {
-  padding: 13px 0px 42px;
+  padding: 13px 0px 32px;
 }
 
 .card-prehome .card-body {
@@ -538,7 +538,7 @@ h5 {
 }
 
 .card-prehome-white .card-text {
-  padding: 13px 0px 32px;
+  padding: 13px 0px 50px;
 }
 
 .card-prehome-white .card-body {

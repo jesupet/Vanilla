@@ -4,7 +4,7 @@
     <div class="card-body text-center">
       <img src="../assets/cohete.svg" alt="cohete">
       <p class="card-text white-font">Tu negocio merece un <br><span class="tittle1 medium-title">landing page</span><br> que refleje lo genial que es!</p>
-      <FuchsiaButton :buttonText="'¡Lo necesito!'"/>
+      <FuchsiaButton :buttonText="'¡Lo necesito!'" :to="'https://vanilla.cl/landings'"/>
       
     </div>
   </div>

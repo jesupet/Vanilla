@@ -3,8 +3,8 @@
     <div class="card-body text-center">
       <h2 class="tittle1 purple-font">{{title}}</h2>
       <p class="card-text black-font">{{text}}</p>
-      <PurpleButton :buttonText="'Ir ahora!'" :class="(displayPurple)"/>
-      <GreenButton :buttonText="'¡Hablemos!'" :class="(displayGreen)"/>
+      <PurpleButton :buttonText="'Ir ahora!'" :class="(displayPurple)" :to="'https://vanilla.cl/antiguo'"/>
+      <GreenButton :buttonText="'¡Hablemos!'" :class="(displayGreen)" :to="'https://api.whatsapp.com/send/?phone=56988625328&text=Hola%21+Me+gustar%C3%ADa+saber+m%C3%A1s+sobre+Vanilla&type=phone_number&app_absent=0'"/>
     </div>
   </div>
 </template>

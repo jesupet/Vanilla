@@ -1,6 +1,6 @@
 <template>
   <button type="button" class="btn btn-purple rounded-pill">
-    <router-link :to="to">{{buttonText}}</router-link>
+    <a :href="to" target="_blank">{{buttonText}}</a>
   </button>
 </template>
 

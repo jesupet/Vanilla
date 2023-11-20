@@ -3,7 +3,7 @@
     type="button"
     class="btn btn-fuchsia rounded-pill"
   >
-    <router-link :to="to">{{buttonText}}</router-link>
+    <a :href="to" target="_blank">{{buttonText}}</a>
   </button>
 </template>
 

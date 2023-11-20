@@ -4,12 +4,12 @@ import HomeTemporal from '../views/HomeTemporal.vue'
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
     component: HomeVanilla
   },
   {
-    path: '/pre-home',
+    path: '/',
     name: 'pre-home',
     component: HomeTemporal
   },
