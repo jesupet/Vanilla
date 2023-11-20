@@ -1,5 +1,6 @@
 .pre-home {
-  max-height: 100vh;
+    max-height: fit-content;
+    overflow-y: hidden;
 }
 .pre-home-header {
   padding-top: 100px;
@@ -24,6 +25,9 @@
   min-height: 0px;
   padding-left: 30px;
   padding-right: 30px;
+  img {
+    padding-top: 4px;
+  }
 }
 .waves-cont-purple {
   height: 130px;
@@ -31,7 +35,6 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-top: -1px;
-  overflow-x: hidden;
   margin-top: 100px;
  //margin: -5px 0px;
 }
@@ -54,14 +57,14 @@
   margin-top: -250px;
   .first-card, .third-card {
     margin-top: 80px;
-    @media (max-width: $desktop-width) {
+    @media (max-width: $big-tablet-width) {
       margin-top: 0px;
     }
   }
 }
 .step-cont {
   margin-bottom: 42px;
-  @media (max-width: $desktop-width) {
+  @media (max-width: 1500px) {
     display: flex;
     justify-content: center;
   }

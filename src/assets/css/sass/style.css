@@ -33,7 +33,6 @@ p {
   font-weight: 700;
   font-size: 75px;
   line-height: 71px;
-  overflow-y: hidden;
 }
 
 .tittle2 {
@@ -253,6 +252,22 @@ footer {
   border-color: #FF3A81;
   background-color: transparent;
   text-decoration: none;
+}
+
+.btn-green {
+  background-color: #60D66A;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 24px 10px 24px;
+  text-transform: uppercase;
+}
+
+.btn-green:hover, .btn-green-hover:hover {
+  text-decoration: none;
+  color: #60D66A;
+  /* Reemplaza "red" con el color que desees */
+  background-color: #fff;
+  border-color: #60D66A;
 }
 
 .waves-cont {
@@ -510,7 +525,7 @@ h5 {
 
 @media (min-width: 1200px) {
   #cards-section {
-    padding: 0px 200px;
+    padding: 0px 150px;
   }
 }
 
@@ -523,11 +538,11 @@ h5 {
 }
 
 .card-prehome-white .card-text {
-  padding: 13px 0px 42px;
+  padding: 13px 0px 32px;
 }
 
 .card-prehome-white .card-body {
-  padding: 50px 30px;
+  padding-top: 50px;
 }
 
 .card-prehome-white button {
@@ -541,7 +556,10 @@ h5 {
 }
 
 .pre-home {
-  max-height: 100vh;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  overflow-y: hidden;
 }
 
 .pre-home-header {
@@ -578,13 +596,16 @@ h5 {
   padding-right: 30px;
 }
 
+.footer-temp img {
+  padding-top: 4px;
+}
+
 .waves-cont-purple {
   height: 130px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: -1px;
-  overflow-x: hidden;
   margin-top: 100px;
 }
 
@@ -616,7 +637,7 @@ h5 {
   margin-top: 80px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .cards-cont .first-card, .cards-cont .third-card {
     margin-top: 0px;
   }
@@ -626,7 +647,7 @@ h5 {
   margin-bottom: 42px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .step-cont {
     display: -webkit-box;
     display: -ms-flexbox;

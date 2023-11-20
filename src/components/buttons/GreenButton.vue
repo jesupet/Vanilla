@@ -1,5 +1,5 @@
 <template>
-  <button type="button" class="btn btn-purple rounded-pill">
+  <button type="button" class="btn btn-green rounded-pill">
     <router-link :to="to">{{buttonText}}</router-link>
   </button>
 </template>
@@ -7,7 +7,7 @@
 <script>
 
 export default {
-  name: 'PurpleButton',
+  name: 'GreenButton',
   props: {
     to: {
       type: String,

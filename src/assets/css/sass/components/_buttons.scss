@@ -40,3 +40,17 @@
   background-color: transparent;
   text-decoration: none;
 }
+
+.btn-green {
+  background-color: #60D66A;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 24px 10px 24px;
+  text-transform: uppercase;
+}
+.btn-green:hover, .btn-green-hover:hover {
+  text-decoration: none;
+  color: #60D66A; /* Reemplaza "red" con el color que desees */
+  background-color: #fff;
+  border-color:#60D66A;
+}

@@ -3,13 +3,15 @@
     <div class="card-body text-center">
       <h2 class="tittle1 purple-font">{{title}}</h2>
       <p class="card-text black-font">{{text}}</p>
-      <PurpleButton :buttonText="buttonText" :class="'btnColor'"/>
+      <PurpleButton :buttonText="'Ir ahora!'" :class="(displayPurple)"/>
+      <GreenButton :buttonText="'¡Hablemos!'" :class="(displayGreen)"/>
     </div>
   </div>
 </template>
 
 <script>
 import PurpleButton from './buttons/PurpleButton.vue'
+import GreenButton from './buttons/GreenButton.vue'
 
 export default {
   name: "CardPreHomeWhite",
@@ -18,6 +20,7 @@ export default {
   },
   components: {
     PurpleButton,
+    GreenButton,
   },
   props: {
     title: {
@@ -28,14 +31,14 @@ export default {
       type: String,
       default: 'card text'
     },
-    buttonText: {
+    displayPurple: {
       type: String,
-      default: 'button text'
+      default: 'd-none'
     },
-    btnColor: {
+    displayGreen: {
       type: String,
-      default: '#6D44BC'
-    }
+      default: 'd-none'
+    },
   }
 }
 </script>

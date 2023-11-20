@@ -53,7 +53,7 @@ h5 {
 }
 #cards-section {
   @media (min-width: $desktop-width){
-    padding: 0px 200px;
+    padding: 0px 150px;
   }
 }
 .card-prehome-white {
@@ -63,10 +63,10 @@ h5 {
   border: 1px solid #6D44BC;
   background-color: $white;
   .card-text {
-    padding: 13px 0px 42px;
+    padding: 13px 0px 32px;
   }
   .card-body {
-    padding: 50px 30px;
+    padding-top: 50px;
   }
   button {
     text-transform: lowercase;
