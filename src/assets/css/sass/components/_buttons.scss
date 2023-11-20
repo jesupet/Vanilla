@@ -26,3 +26,17 @@
   background-color: #6d44bc;
   border: 0px;
 }
+.btn-fuchsia {
+  background-color: $fuchsia;
+  color: $white;
+  font-size: 14px;
+  padding: 11px 20px;
+  height: 3rem;
+}
+
+.btn-fuchsia:hover {
+  color: $fuchsia;
+  border-color: $fuchsia;
+  background-color: transparent;
+  text-decoration: none;
+}

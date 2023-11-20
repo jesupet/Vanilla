@@ -1,5 +1,8 @@
 <template>
-  <button type="button" class="btn btn-purple rounded-pill" :style="'background-color:{btnColor}'">
+  <button 
+    type="button"
+    class="btn btn-fuchsia rounded-pill"
+  >
     <router-link :to="to">{{buttonText}}</router-link>
   </button>
 </template>
@@ -7,7 +10,7 @@
 <script>
 
 export default {
-  name: 'PurpleButton',
+  name: 'FuchsiaButton',
   props: {
     to: {
       type: String,

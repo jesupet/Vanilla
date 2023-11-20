@@ -69,6 +69,14 @@ p {
   color: #6d44bc;
 }
 
+.fuchsia-text {
+  color: #FF3A81;
+}
+
+.black-font {
+  color: #000;
+}
+
 /* Styles */
 .uppercase {
   text-transform: uppercase;
@@ -230,6 +238,21 @@ footer {
   /* Reemplaza "red" con el color que desees */
   background-color: #6d44bc;
   border: 0px;
+}
+
+.btn-fuchsia {
+  background-color: #FF3A81;
+  color: #fff;
+  font-size: 14px;
+  padding: 11px 20px;
+  height: 3rem;
+}
+
+.btn-fuchsia:hover {
+  color: #FF3A81;
+  border-color: #FF3A81;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .waves-cont {
@@ -465,6 +488,58 @@ h5 {
   color: #fff;
 }
 
+.card-prehome {
+  width: 295px;
+  height: 360px;
+  border-radius: 35px;
+  border: 1px solid #6D44BC;
+  background: linear-gradient(147deg, #763BFF 3.99%, #C16BF9 100%);
+}
+
+.card-prehome img {
+  padding-top: 32px;
+}
+
+.card-prehome .card-text {
+  padding: 13px 0px 42px;
+}
+
+.card-prehome .card-body {
+  padding: 0px;
+}
+
+@media (min-width: 1200px) {
+  #cards-section {
+    padding: 0px 200px;
+  }
+}
+
+.card-prehome-white {
+  width: 295px;
+  height: 360px;
+  border-radius: 35px;
+  border: 1px solid #6D44BC;
+  background-color: #fff;
+}
+
+.card-prehome-white .card-text {
+  padding: 13px 0px 42px;
+}
+
+.card-prehome-white .card-body {
+  padding: 50px 30px;
+}
+
+.card-prehome-white button {
+  text-transform: lowercase;
+  padding: 11px 30px;
+  margin-bottom: 30px;
+}
+
+.card-prehome-white .tittle1 {
+  font-size: 66px;
+}
+
 .pre-home {
   max-height: 100vh;
 }
@@ -509,11 +584,57 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: -1px;
-  padding-bottom: 70vh;
+  overflow-x: hidden;
+  margin-top: 100px;
 }
 
 .rrss {
   padding-bottom: 50px;
+}
+
+.medium-title {
+  font-size: 35px;
+  line-height: 50px;
+}
+
+.white-box {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 10px 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: -20px;
+  font-size: 11px;
+}
+
+.cards-cont {
+  margin-top: -250px;
+}
+
+.cards-cont .first-card, .cards-cont .third-card {
+  margin-top: 80px;
+}
+
+@media (max-width: 1200px) {
+  .cards-cont .first-card, .cards-cont .third-card {
+    margin-top: 0px;
+  }
+}
+
+.step-cont {
+  margin-bottom: 42px;
+}
+
+@media (max-width: 1200px) {
+  .step-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .carousel-control-next {

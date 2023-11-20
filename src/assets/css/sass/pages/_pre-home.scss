@@ -31,9 +31,38 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-top: -1px;
-  padding-bottom: 70vh;
+  overflow-x: hidden;
+  margin-top: 100px;
  //margin: -5px 0px;
 }
 .rrss {
   padding-bottom: 50px;
+}
+.medium-title {
+  font-size: 35px;
+  line-height: 50px;
+}
+.white-box {
+  background-color: $white;
+  border-radius: 20px;
+  padding: 10px 14px;
+  width: fit-content;
+  margin-top: -20px;
+  font-size: 11px;
+}
+.cards-cont {
+  margin-top: -250px;
+  .first-card, .third-card {
+    margin-top: 80px;
+    @media (max-width: $desktop-width) {
+      margin-top: 0px;
+    }
+  }
+}
+.step-cont {
+  margin-bottom: 42px;
+  @media (max-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
 }

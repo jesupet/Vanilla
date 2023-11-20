@@ -35,3 +35,45 @@ h5 {
   background-color: #6d44bc;
   color: #fff;
 }
+.card-prehome {
+  width: 295px;
+  height: 360px;
+  border-radius: 35px;
+  border: 1px solid #6D44BC;
+  background: linear-gradient(147deg, #763BFF 3.99%, #C16BF9 100%);
+  img {
+    padding-top: 32px;
+  }
+  .card-text {
+    padding: 13px 0px 42px;
+  }
+  .card-body {
+    padding: 0px;
+  }
+}
+#cards-section {
+  @media (min-width: $desktop-width){
+    padding: 0px 200px;
+  }
+}
+.card-prehome-white {
+  width: 295px;
+  height: 360px;
+  border-radius: 35px;
+  border: 1px solid #6D44BC;
+  background-color: $white;
+  .card-text {
+    padding: 13px 0px 42px;
+  }
+  .card-body {
+    padding: 50px 30px;
+  }
+  button {
+    text-transform: lowercase;
+    padding: 11px 30px;
+    margin-bottom: 30px;
+  }
+  .tittle1 {
+    font-size: 66px;
+  }
+}
