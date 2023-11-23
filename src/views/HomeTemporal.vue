@@ -14,7 +14,7 @@
     <div class="container" id="cards-section">
       <div class="cards-cont">
         <div class="row text-center">
-          <div class="col-12 col-lg-4 step-cont order-lg-0 order-1">
+          <div class="col-12 col-lg-4 step-cont order-lg-0 order-2">
             <CardPreHomeWhite 
               class="first-card" 
               :title="'Ups!'" 
@@ -25,7 +25,7 @@
           <div class="col-12 col-lg-4 step-cont order-lg-1 order-0">
             <CardPreHome class="central-card order-lg-0"/>
           </div>
-          <div class="col-12 col-lg-4 step-cont order-2">
+          <div class="col-12 col-lg-4 step-cont order-1">
             <CardPreHomeWhite 
               class="third-card" 
               :title="'¿Dudas?'"
@@ -45,13 +45,13 @@
     <footer class="footer-temp text-center">
       <div class="rrss">
         <div class="p-1 d-inline justify-text-center">
-          <a href="https://www.facebook.com/vanilla.diseno/" target="_blank"><img src="../assets/rrss_logos/fb_white.png" alt="facebook logo"></a>
+          <a href="https://www.facebook.com/vanilla.diseno/" target="_blank" class="rrss-icon"><img src="../assets/rrss_logos/fb_white.png" alt="facebook logo"></a>
         </div>
         <div class="p-1 d-inline">
-          <a href="https://www.instagram.com/vanilladiseno/" target="_blank"><img src="../assets/rrss_logos/ig_white.png" alt="instagram logo"></a>
+          <a href="https://www.instagram.com/vanilladiseno/" target="_blank" class="rrss-icon"><img src="../assets/rrss_logos/ig_white.png" alt="instagram logo"></a>
         </div>
         <div class="p-1 d-inline">
-          <a href="https://www.linkedin.com/company/vanilladiseno" target="_blank"><img src="../assets/rrss_logos/lkdn_white.png" alt="linkedin logo"></a>
+          <a href="https://www.linkedin.com/company/vanilladiseno" target="_blank" class="rrss-icon"><img src="../assets/rrss_logos/lkdn_white.png" alt="linkedin logo"></a>
         </div>
         <p class="pt-3">SOMOS DE <span class="bold">CHILE</span>, Y PODEMOS TRABAJAR PARA TODO EL MUNDO!</p>
       </div>     

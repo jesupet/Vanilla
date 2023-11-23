@@ -546,7 +546,7 @@ h5 {
 }
 
 .card-prehome-white button {
-  text-transform: lowercase;
+  text-transform: capitalize;
   padding: 11px 30px;
   margin-bottom: 30px;
 }
@@ -563,8 +563,8 @@ h5 {
 }
 
 .pre-home-header {
-  padding-top: 100px;
-  padding-bottom: 300px;
+  padding-top: 0px;
+  padding-bottom: 200px;
 }
 
 .pre-home-header .tittle-cont {
@@ -656,6 +656,16 @@ h5 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.rrss-icon {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.rrss-icon:hover {
+  opacity: 0.6;
 }
 
 .carousel-control-next {

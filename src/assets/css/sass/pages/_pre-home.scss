@@ -3,8 +3,8 @@
     overflow-y: hidden;
 }
 .pre-home-header {
-  padding-top: 100px;
-  padding-bottom: 300px;
+  padding-top: 0px;
+  padding-bottom: 200px;
   .tittle-cont {
     @media (min-width: 1400px){
       padding: 0px 350px;
@@ -68,4 +68,11 @@
     display: flex;
     justify-content: center;
   }
+}
+.rrss-icon {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.rrss-icon:hover {
+  opacity: 0.6;
 }
