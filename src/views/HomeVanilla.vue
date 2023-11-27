@@ -92,7 +92,8 @@
       <div class="container d-flex justify-content-between mx-auto cta-box">
         <h3 class="tittle2 bold d-md-inline d-block">¿Tu negocio necesita<br><span class="tittle2 no-bold">expresar lo genial que es?</span></h3>
         <img src="../assets/purple-arrow.svg" alt="flecha curva" class="d-xl-block d-none purple-arrow">
-        <TransparentButton 
+        <TransparentButton
+          :to="'/'" 
           class="d-block"
           :buttonText="'¡Trabajemos juntos!'"
           data-tally-open="w8LOkx" 
@@ -285,5 +286,8 @@ export default {
   position: absolute;
   z-index: -1;
   margin-top: -80px;
+}
+#lo-que-hacemos {
+  padding-bottom: 50px;
 }
 </style>

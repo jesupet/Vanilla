@@ -18,7 +18,7 @@
             <CardPreHomeWhite 
               class="first-card" 
               :title="'Ups!'" 
-              :text="'Aún nuestro sitio está en cosntrucción (somos muy perfeccionistas jeje). Mientras puedes navegar en nuestro sitio antiguo.'"
+              :text="'Aún nuestro sitio está en construcción (somos muy perfeccionistas jeje). Mientras puedes navegar en nuestro sitio antiguo.'"
               :buttonText="'Ir ahora!'"
               :displayPurple="'d-inline'"/>
           </div>

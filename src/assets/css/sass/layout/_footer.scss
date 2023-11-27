@@ -35,5 +35,12 @@ footer {
   }
 }
 .right-cont {
-  padding: 0px 50px;
+  @media (min-width: $tablet-width){
+    padding: 0px 50px;
+  }
+}
+@media (max-width: $tablet-width) {
+  ul {
+    padding-left: 0px;
+  }
 }

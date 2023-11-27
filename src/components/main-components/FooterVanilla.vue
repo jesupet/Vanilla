@@ -2,7 +2,7 @@
   <WavesDiv class="reflect-y"/>
   <footer>
     <div class="row pt-5 container-fluid">
-      <div class="col-md-6 col-12 row text-md-end text-center">
+      <div class="col-md-6 col-12 row text-md-end text-start">
         <div class="col-6">
           <img src="../../assets/vanilla_logos/logo-vanilla-bajada.png" alt="logo con bajada">
           <div class="rrss-cont justify-content-end">
@@ -33,9 +33,9 @@
                 <a href="">Han Confiado</a>
               </li>
               <li>
-                <button 
-                  type="button" 
-                  class="btn btn-purple rounded-pill"
+                <PurpleButton 
+                  :to="'/'" 
+                  :buttonText="'Hablemos!'" 
                   data-tally-open="w8LOkx" 
                   data-tally-layout="modal" 
                   data-tally-width="384" 
@@ -43,9 +43,7 @@
                   data-tally-emoji-text="👋" 
                   data-tally-emoji-animation="wave" 
                   data-tally-auto-close="2000"
-                >
-                  <router-link class="nav-link" to="/">Hablemos!</router-link>
-                </button>
+                />
               </li>
             </ul>
           </div>
@@ -73,11 +71,13 @@
 
 <script>
 import WavesDiv from '../WavesDiv.vue'
+import PurpleButton from '../buttons/PurpleButton.vue'
 
 export default {
   name: "FooterVanilla",
   components: {
     WavesDiv,
+    PurpleButton
   }
 }
 

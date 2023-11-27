@@ -202,8 +202,16 @@ footer {
   }
 }
 
-.right-cont {
-  padding: 0px 50px;
+@media (min-width: 768px) {
+  .right-cont {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  ul {
+    padding-left: 0px;
+  }
 }
 
 .btn-purple {
