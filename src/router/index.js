@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import HomeVanilla from '../views/HomeVanilla.vue'
 import HomeTemporal from '../views/HomeTemporal.vue'
 
@@ -16,7 +16,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   //PARA QUE EL MENU SCROLLEE HACIA ABAJO
   scrollBehavior(to, from, savedPosition) {
