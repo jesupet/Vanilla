@@ -3,7 +3,7 @@
     <div class="card-body text-center">
       <img class="prod-icon" src="../assets/prod_icons/id_corp_icon.png" alt="">
       <div class="title-box">
-        <h5 class="card-title tittle4">Identidad corporativa</h5>
+        <h5 class="card-title tittle4">Branding e identidad visual</h5>
       </div>
       <p class="card-text">¡Por aquí comienza todo y tu logo no lo es todo! Tu negocio necesita reflejar todo lo que es, lo que representa y seguir una línea grafica coherente.</p>
       <div class="arrow-cont">

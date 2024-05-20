@@ -25,6 +25,14 @@
           </li>
           <li class="nav-item">
             <router-link 
+            class="nav-link"
+            aria-current="page" 
+            :to="'/nosotros'" >
+              Nosotros
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link 
             class="nav-link" 
             :to="{name: 'home', hash: '#'+'lo-que-hacemos'}"  >
               ¿Qué Hacemos?
@@ -32,24 +40,9 @@
           </li>
           <li class="nav-item">
             <router-link 
-            class="nav-link"
-            aria-current="page" 
-            :to="{name: 'home', hash: '#'+'nosotros'}" >
-              Nosotros
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link 
             class="nav-link" 
             :to="{name: 'home', hash: '#'+'proyectos'}">
-              Proyectos
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link 
-            class="nav-link" 
-            :to="{name: 'home', hash: '#'+'clientes'}">
-              Han Confiado
+              Proyectos y Clientes
             </router-link>
           </li>
           <li class="nav-item">

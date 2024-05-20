@@ -50,20 +50,20 @@
       <p class="subtitle">a ver si te hace clic!</p>
       <div class="row container mx-auto us-cont">
         <div class="col-12 col-xl-3 my-4">
-          <img src="../assets/us_icons/teletrabajo.png" alt="audifonos">
-          <p class="us-desc">Nos volvimos 100% teletrabajo.</p>
-        </div>
-        <div class="col-12 col-xl-3 my-4">
-          <img src="../assets/us_icons/10_anos.png" alt="audifonos">
+          <img src="../assets/us_icons/10_anos.png" alt="icono cohete">
           <p class="us-desc">Más de 10 años apoyando negocios y marcas.</p>
         </div>
         <div class="col-12 col-xl-3 my-4">
-          <img src="../assets/us_icons/50_negocios.png" alt="audifonos">
-          <p class="us-desc">Más de 50 negocios atendidos en los últimos años.</p>
+          <img src="../assets/us_icons/mujeres.png" alt="icono corazon">
+          <p class="us-desc">Equipo de mujeres comprometidas que nos encanta lo que hacemos.</p>
         </div>
         <div class="col-12 col-xl-3 my-4">
-          <img src="../assets/us_icons/compromiso.png" alt="audifonos">
-          <p class="us-desc">1000% comprometidos con  que vivas una gran experiencia.</p>
+          <img src="../assets/us_icons/50_negocios.png" alt="icono caritas">
+          <p class="us-desc">Queremos formar y mantener una relación de confianza con nuestros clientes.</p>
+        </div>
+        <div class="col-12 col-xl-3 my-4">
+          <img src="../assets/us_icons/especialistas.png" alt="icono especialistas">
+          <p class="us-desc">Especialistas en diseño y trabajamos con aliados especialistas en otras áreas.</p>
         </div>
       </div>
     </section>
@@ -90,7 +90,7 @@
     <WavesDiv class="reflect-y over"/>
     <div id="cta" class="container-fluid">
       <div class="container d-flex justify-content-between mx-auto cta-box">
-        <h3 class="tittle2 bold d-md-inline d-block">¿Tu negocio necesita<br><span class="tittle2 no-bold">expresar lo genial que es?</span></h3>
+        <h3 class="tittle2 bold d-md-inline d-block">¿Quieres darle vida<br><span class="tittle2 no-bold"> a tus ideas y proyectos?</span></h3>
         <img src="../assets/purple-arrow.svg" alt="flecha curva" class="d-xl-block d-none purple-arrow">
         <TransparentButton
           :to="'/'" 
@@ -119,26 +119,26 @@
             <div class="col-xl-5 col-6 py-5">
               <ul class="px-0">
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Creativos</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Excelencia</span>
                 </li>
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Confiables</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Cercanía</span>
                 </li>
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Amigables</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Creatividad</span>
                 </li>
               </ul>
             </div>
             <div class="col-xl-7 col-6 py-5 text-start">
               <ul class="px-0">
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Comprometidos</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Compromiso</span>
                 </li>
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Profesionales</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Profesionalismo</span>
                 </li>
                 <li>
-                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Conectados</span>
+                  <span class="list-item"><img src="../assets/check-icon.svg" alt="check">Confianza</span>
                 </li>
               </ul>
             </div>

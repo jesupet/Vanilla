@@ -1,9 +1,8 @@
 .waves-cont {
   height: 130px;
   background-image: url('@/assets/olas_header.png');
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   margin-top: -1px;
   
   //margin: -5px 0px;
@@ -11,4 +10,13 @@
 .reflect-y {
   transform: scaleY(-1);
   margin-bottom: -1px;
+}
+.waves-cont-grey {
+  height: 130px;
+  background-image: url('@/assets/olas_header_grey.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: -1px;
+  
+  //margin: -5px 0px;
 }

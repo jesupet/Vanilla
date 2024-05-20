@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   list-style: none;
 }
@@ -29,29 +29,35 @@ p {
 
 /* Títulos */
 .tittle1 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 71px;
 }
 
 .tittle2 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 55px;
   margin: 0px;
 }
 
 .tittle3 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 50px;
   margin: 0px;
   font-weight: 700;
 }
 
 .tittle4 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-weight: 700;
   font-size: 75px;
+}
+
+.tittle5 {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
+  font-size: 65px;
 }
 
 .subtitle {
@@ -109,12 +115,8 @@ nav {
 .nav-item {
   padding: 20px;
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .nav-link:hover {
@@ -184,8 +186,7 @@ footer {
 }
 
 .wsp-icon {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 28px;
   margin-bottom: 1em;
   margin-left: 0.5em;
@@ -201,7 +202,6 @@ footer {
     padding-bottom: 100px;
   }
 }
-
 @media (min-width: 768px) {
   .right-cont {
     padding: 0px 50px;
@@ -213,7 +213,6 @@ footer {
     padding-left: 0px;
   }
 }
-
 .btn-purple {
   background-color: #6d44bc;
   color: #fff;
@@ -224,8 +223,7 @@ footer {
 
 .btn-purple:hover, .btn-purple-hover:hover {
   text-decoration: none;
-  color: #6d44bc;
-  /* Reemplaza "red" con el color que desees */
+  color: #6d44bc; /* Reemplaza "red" con el color que desees */
   background-color: #fff;
   border-color: #6d44bc;
 }
@@ -241,8 +239,7 @@ footer {
 
 .btn-transparent:hover {
   text-decoration: none;
-  color: #fff;
-  /* Reemplaza "red" con el color que desees */
+  color: #fff; /* Reemplaza "red" con el color que desees */
   background-color: #6d44bc;
   border: 0px;
 }
@@ -272,8 +269,7 @@ footer {
 
 .btn-green:hover, .btn-green-hover:hover {
   text-decoration: none;
-  color: #60D66A;
-  /* Reemplaza "red" con el color que desees */
+  color: #60D66A; /* Reemplaza "red" con el color que desees */
   background-color: #fff;
   border-color: #60D66A;
 }
@@ -281,16 +277,22 @@ footer {
 .waves-cont {
   height: 130px;
   background-image: url("@/assets/olas_header.png");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   margin-top: -1px;
 }
 
 .reflect-y {
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
+  transform: scaleY(-1);
   margin-bottom: -1px;
+}
+
+.waves-cont-grey {
+  height: 130px;
+  background-image: url("@/assets/olas_header_grey.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: -1px;
 }
 
 .card-body {
@@ -303,8 +305,7 @@ footer {
   width: 360px;
   max-width: 90vw;
   height: 400px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #6d44bc;
   color: #fff;
   border-radius: 25px;
@@ -339,8 +340,7 @@ footer {
 .product-card-black {
   max-width: 360px;
   height: 400px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #1b1629;
   color: #fff;
   border-radius: 25px;
@@ -372,7 +372,6 @@ footer {
 }
 
 .big-cont {
-  display: -ms-grid;
   display: grid;
   place-items: center;
 }
@@ -383,12 +382,8 @@ footer {
   border: 1px solid #6d44bc;
   border-radius: 50%;
   padding: 40px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   overflow-y: hidden;
 }
 
@@ -413,19 +408,14 @@ footer {
 
 @media (min-width: 750px) {
   .carousel-inner-logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .carousel-item-logos {
     display: block;
     margin-right: 0;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100%/4);
-            flex: 0 0 calc(100%/4);
+    flex: 0 0 25%;
   }
 }
-
 .carousel-brands {
   width: 90%;
   height: auto;
@@ -442,7 +432,6 @@ footer {
 }
 
 .carousel-inner .col-6 {
-  display: -ms-grid;
   display: grid;
   place-items: center;
 }
@@ -454,7 +443,6 @@ footer {
      object-fit: cover;
   border-radius: 25px;
   opacity: 1;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -464,8 +452,7 @@ footer {
 
 .box {
   padding: 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .client-card {
@@ -475,8 +462,7 @@ footer {
   border-radius: 25px;
   margin: 53px 20px;
   width: 23rem;
-  -webkit-box-shadow: 10px 10px #cbc9c9;
-          box-shadow: 10px 10px #cbc9c9;
+  box-shadow: 10px 10px rgb(203, 201, 201);
 }
 
 .client-card .card-body {
@@ -489,7 +475,7 @@ footer {
 }
 
 h5 {
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   font-weight: 300px;
 }
 
@@ -518,15 +504,12 @@ h5 {
   border: 1px solid #6D44BC;
   background: linear-gradient(147deg, #763BFF 3.99%, #C16BF9 100%);
 }
-
 .card-prehome img {
   padding-top: 32px;
 }
-
 .card-prehome .card-text {
   padding: 13px 0px 32px;
 }
-
 .card-prehome .card-body {
   padding: 0px;
 }
@@ -544,27 +527,22 @@ h5 {
   border: 1px solid #6D44BC;
   background-color: #fff;
 }
-
 .card-prehome-white .card-text {
   padding: 13px 0px 50px;
 }
-
 .card-prehome-white .card-body {
   padding-top: 50px;
 }
-
 .card-prehome-white button {
   text-transform: capitalize;
   padding: 11px 30px;
   margin-bottom: 30px;
 }
-
 .card-prehome-white .tittle1 {
   font-size: 66px;
 }
 
 .pre-home {
-  max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
   max-height: fit-content;
   overflow-y: hidden;
@@ -574,17 +552,14 @@ h5 {
   padding-top: 0px;
   padding-bottom: 200px;
 }
-
 .pre-home-header .tittle-cont {
   padding: 0px 30px;
 }
-
 @media (min-width: 1400px) {
   .pre-home-header .tittle-cont {
     padding: 0px 350px;
   }
 }
-
 @media (min-width: 1200px) {
   .pre-home-header .tittle-cont {
     padding: 0px 250px;
@@ -603,7 +578,6 @@ h5 {
   padding-left: 30px;
   padding-right: 30px;
 }
-
 .footer-temp img {
   padding-top: 4px;
 }
@@ -630,7 +604,6 @@ h5 {
   background-color: #fff;
   border-radius: 20px;
   padding: 10px 14px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: -20px;
@@ -640,11 +613,9 @@ h5 {
 .cards-cont {
   margin-top: -250px;
 }
-
 .cards-cont .first-card, .cards-cont .third-card {
   margin-top: 80px;
 }
-
 @media (max-width: 992px) {
   .cards-cont .first-card, .cards-cont .third-card {
     margin-top: 0px;
@@ -654,21 +625,15 @@ h5 {
 .step-cont {
   margin-bottom: 42px;
 }
-
 @media (max-width: 1500px) {
   .step-cont {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 
 .rrss-icon {
   opacity: 1;
-  -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
 
@@ -676,21 +641,31 @@ h5 {
   opacity: 0.6;
 }
 
+.main-title {
+  background-color: #1b1629;
+  color: #fff;
+  min-height: 20vh;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.mision {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 80px 0px;
+}
+.mision p, .mision span {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
 .carousel-control-next {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .carousel-control-prev {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-/*# sourceMappingURL=style.css.map */
+  justify-content: flex-start;
+}/*# sourceMappingURL=style.css.map */

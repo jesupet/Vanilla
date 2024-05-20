@@ -54,6 +54,7 @@
           <a href="https://www.linkedin.com/company/vanilladiseno" target="_blank" class="rrss-icon"><img src="../assets/rrss_logos/lkdn_white.png" alt="linkedin logo"></a>
         </div>
         <p class="pt-3">SOMOS DE <span class="bold">CHILE</span>, Y PODEMOS TRABAJAR PARA TODO EL MUNDO!</p>
+        <p><router-link to="/home">vanilla 2023</router-link></p>
       </div>     
     </footer>
   </div>
