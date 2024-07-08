@@ -1,0 +1,27 @@
+.list-item {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.list-item img {
+  width: 30px;
+  margin: 10px;
+}
+@media (max-width: 500px){
+  .list-item img {
+    width: 20px;
+    margin: 5px;
+  }
+  .list-item {
+    font-size: 20px;
+  }
+}
+
+.purple-big-circle {
+  position: absolute;
+  z-index: -1;
+  margin-top: -80px;
+}
+#lo-que-hacemos {
+  padding-bottom: 50px;
+}

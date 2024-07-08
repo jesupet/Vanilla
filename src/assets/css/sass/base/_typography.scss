@@ -1,5 +1,5 @@
 /* Títulos */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Source+Serif+Pro:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Source+Serif+Pro:wght@400;700&display=swap');
 
 .tittle1 {
   font-family: 'Source Serif Pro', serif;
@@ -28,6 +28,11 @@
   font-weight: 700;
   font-size: 65px;
 }
+.tittle6 {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 30px;
+}
 .subtitle {
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -46,6 +51,12 @@
 .black-font {
   color: #000;
 }
+.pink-font {
+  color: #FF93F4
+}
+.dark-purple-font {
+  color: $dark-purple;
+}
 
 /* Styles */
 .uppercase {
@@ -56,4 +67,10 @@
 }
 .bold {
   font-weight: 700;
+}
+.italic {
+  font-style: italic ;
+}
+.black {
+  font-weight: 900;
 }

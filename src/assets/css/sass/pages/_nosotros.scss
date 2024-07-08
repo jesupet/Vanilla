@@ -14,5 +14,19 @@
     font-weight: 700;
     font-size: 30px;
   }
-  
+  .container {
+    @media (min-width: 1300px) {
+      padding: 0px 250px;
+    }
+  }
+}
+#somos {
+  background-color: #6D44BC;
+  padding-bottom: 100px;
+  img {
+    width: 275px;
+  }
+  .row {
+    margin: 50px 0px;
+  }
 }

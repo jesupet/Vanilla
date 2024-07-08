@@ -13,3 +13,9 @@
   padding: 8px;
   box-sizing: border-box;
 }
+.d-flex-schn {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
