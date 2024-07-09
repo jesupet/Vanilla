@@ -22,11 +22,24 @@
 }
 #somos {
   background-color: #6D44BC;
-  padding-bottom: 100px;
+  padding: 100px 0px;
   img {
     width: 275px;
   }
   .row {
     margin: 50px 0px;
+  }
+}
+.valores {
+  padding: 70px 0px;
+  text-align: center;
+  img {
+    max-width: 963px;
+  }
+}
+#otros-colab {
+  padding: 50px 0px;
+  img {
+    max-width: 237px;
   }
 }
