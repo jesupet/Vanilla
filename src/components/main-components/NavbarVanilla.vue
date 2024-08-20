@@ -34,14 +34,14 @@
           <li class="nav-item">
             <router-link 
             class="nav-link" 
-            :to="{name: 'home', hash: '#'+'lo-que-hacemos'}"  >
+            :to="'/proyectos'"  >
               ¿Qué Hacemos?
             </router-link>
           </li>
           <li class="nav-item">
             <router-link 
             class="nav-link" 
-            :to="{name: 'home', hash: '#'+'proyectos'}">
+            :to="'/proyectos'">
               Proyectos y Clientes
             </router-link>
           </li>

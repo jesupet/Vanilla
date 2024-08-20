@@ -1,0 +1,30 @@
+.frase-proyectos {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 40px 0px;
+  p, span {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
+.texto-proyecto {
+  border: 1px solid $light-grey;
+  width: 408px;
+  height: 408px;
+  border-radius: 20px;
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-proyectos {
+  img {
+    max-width: 100%;
+  }
+}
+.autor-test {
+  font-family: $source-serif;
+  font-size: 16px;
+  padding-top: 20px
+}

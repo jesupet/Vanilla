@@ -184,9 +184,7 @@ nav {
 footer {
   background-color: #1b1629;
   color: #fff;
-  min-height: 70vh;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 50px 30px;
 }
 
 .rrss-cont {
@@ -353,7 +351,7 @@ footer {
 }
 
 .prod-icon {
-  width: 25%;
+  width: 80px;
   margin-top: 10px;
 }
 
@@ -799,6 +797,38 @@ h5 {
 }
 #otros-colab img {
   max-width: 237px;
+}
+
+.frase-proyectos {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 40px 0px;
+}
+.frase-proyectos p, .frase-proyectos span {
+  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.texto-proyecto {
+  border: 1px solid #D9D9D9;
+  width: 408px;
+  height: 408px;
+  border-radius: 20px;
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img-proyectos img {
+  max-width: 100%;
+}
+
+.autor-test {
+  font-family: "Source Serif Pro", serif;
+  font-size: 16px;
+  padding-top: 20px;
 }
 
 .carousel-control-next {

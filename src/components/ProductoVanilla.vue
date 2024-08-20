@@ -1,7 +1,7 @@
 <template>
   <div class="card text-center product-card mx-auto" @mouseover="changeArrowColor('#1b1629')" @mouseleave="changeArrowColor('white')">
     <div class="card-body text-center">
-      <img class="prod-icon" src="../assets/prod_icons/id_corp_icon.png" alt="">
+      <img class="prod-icon" src="../assets/prod_icons/id_corp_icon.svg" alt="">
       <div class="title-box">
         <h5 class="card-title tittle4">Branding e identidad visual</h5>
       </div>
@@ -13,7 +13,7 @@
   </div>
   <div class="card text-center product-card mx-auto" @mouseover="changeArrowColor2('#1b1629')" @mouseleave="changeArrowColor2('white')">
     <div class="card-body">
-      <img class="prod-icon" src="../assets/prod_icons/dis_dig_icon.png" alt="">
+      <img class="prod-icon" src="../assets/prod_icons/dis_dig_icon.svg" alt="">
       <div class="title-box">
         <h5 class="card-title tittle4">Diseño digital</h5>
       </div>
@@ -25,7 +25,7 @@
   </div>
   <div class="card text-center product-card-black mx-auto" @mouseover="changeArrowColor3('#1b1629')" @mouseleave="changeArrowColor3('white')">
     <div class="card-body">
-      <img class="prod-icon" src="../assets/prod_icons/ap_agen_icon.png" alt="">
+      <img class="prod-icon" src="../assets/prod_icons/ap_agen_icon.svg" alt="">
         <div class="title-box">
           <h5 class="card-title tittle4">Apoyo agencias</h5>
         </div>

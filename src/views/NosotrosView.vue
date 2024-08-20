@@ -1,5 +1,4 @@
 <template>
-  <NavbarVanilla/>
   <div>
     <div class="main-title">
       <h1 class="tittle5">Nosotros</h1>
@@ -93,21 +92,17 @@
       
     </div>  
   </div>
-  <FooterVanilla/>
 </template>
 
 <script>
-import NavbarVanilla from '../components/main-components/NavbarVanilla.vue'
-import FooterVanilla from '../components/main-components/FooterVanilla.vue'
+
 import WavesDiv from '../components/WavesDiv.vue'
 import WavesDivGrey from '../components/WavesDivGrey.vue'
 import WavesDivPurple from '../components/WavesDivPurple.vue'
 
 export default {
-  name: 'HomeVanilla',
+  name: 'ProyectosView',
   components: {
-    NavbarVanilla,
-    FooterVanilla,
     WavesDiv,
     WavesDivGrey,
     WavesDivPurple,

@@ -1,5 +1,4 @@
 <template>
-  <NavbarVanilla/>
   <div class="home container-fluid">
     <header class="container text-center">
       <div class="row">
@@ -146,13 +145,11 @@
         </div>
       </div>
     </section>
-  <FooterVanilla/>
 </template>
 
 <script>
 import {logos} from '@/store/logos'
 
-import NavbarVanilla from '../components/main-components/NavbarVanilla.vue'
 import ProductoVanilla from '../components/ProductoVanilla.vue'
 import ProductoVanilla2 from '../components/ProductoVanilla2.vue'
 import CircleCTA from '../components/CircleCTA.vue'
@@ -163,14 +160,12 @@ import ClientCard from '../components/ClientCard.vue'
 import TransparentButton from '@/components/buttons/TransparentButton.vue'
 import PurpleButton from '../components/buttons/PurpleButton.vue'
 import CarouselLogos from '../components/CarouselLogos.vue'
-import FooterVanilla from '../components/main-components/FooterVanilla.vue'
 
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'HomeVanilla',
   components: {
-    NavbarVanilla,
     ProductoVanilla,
     ProductoVanilla2,
     CircleCTA,
@@ -181,7 +176,6 @@ export default {
     TransparentButton,
     PurpleButton,
     CarouselLogos,
-    FooterVanilla
   },
   data() {
     return{
