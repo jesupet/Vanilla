@@ -14,8 +14,11 @@
     <div class="nos-destacamos">
       <h3 class="tittle1 text-center">Nos <br><span class="purple-font tittle1">destacamos por</span></h3>
       <p class="subtitle text-center">estos atributos que cuidamos fielmente</p>
-      <div class="valores">
-        <img src="../assets/nosotros_diagrama.png" alt="" class="d-xl-block d-none">
+      <div class="valores text-center d-xl-block d-none">
+        <img src="../assets/nosotros_diagrama.png" alt="" class="">
+      </div>
+      <div class="valores text-center d-xl-none d-block">
+        <img src="../assets/us_icons/nosotros_diagrama_mobile.svg" alt="" class="">
       </div>
     </div>
     <WavesDivPurple/>
@@ -70,9 +73,9 @@
           <div class="col-12 col-xl-3 pt-xl-0 pt-5">
             <img src="../assets/nosotros_img/anto.png" alt="" class="mb-2 img-fluid">
             <p class="tittle-6">
-              Antonia Moller
+              Carolyne Castellón
             </p>
-            <p class="pink-font italic">Identidad, Gráficas Digitales</p>
+            <p class="pink-font italic">Gráficas Digitales</p>
           </div>
           <div class="col-12 col-xl-3 pt-xl-0 pt-5">
             <img src="../assets/nosotros_img/cono.png" alt="" class="mb-2 img-fluid">

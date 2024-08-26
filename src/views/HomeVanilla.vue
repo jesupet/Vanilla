@@ -161,7 +161,7 @@ import TransparentButton from '@/components/buttons/TransparentButton.vue'
 import PurpleButton from '../components/buttons/PurpleButton.vue'
 import CarouselLogos from '../components/CarouselLogos.vue'
 
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters, mapActions, mapState } from 'vuex'
 
 export default {
   name: 'HomeVanilla',
@@ -185,6 +185,7 @@ export default {
   },
   computed: {
     ...mapGetters(["logoGroups"]),
+    ...mapState (['clients'])
   },
   created() {
     window.addEventListener("resize", this.handleResize);

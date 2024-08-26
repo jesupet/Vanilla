@@ -10,8 +10,8 @@
       </div>
     </div>
     <WavesDivGrey/>
-    <div id="proyectos" class="container">
-       <ItemProyecto/>
+    <div id="proyectos" class="container" v-for="(cliente, index) in clients" :key="index">
+       <ItemProyecto :cliente="cliente"/>
     </div>  
   </div>
 </template>
@@ -20,6 +20,7 @@
 import WavesDiv from '../components/WavesDiv.vue'
 import WavesDivGrey from '../components/WavesDivGrey.vue'
 import ItemProyecto from '../components/ItemProyecto.vue'
+import { mapState } from 'vuex'
 
 
 export default {
@@ -29,6 +30,9 @@ export default {
     WavesDivGrey,
     ItemProyecto,
 
+  },
+  computed : {
+    ...mapState (['clients'])
   }
 
 }

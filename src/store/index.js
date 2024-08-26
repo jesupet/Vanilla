@@ -35,11 +35,17 @@ export default createStore({
     fetchLogos({ commit }) {
       // Aquí puedes realizar una llamada API o cargar los logos de alguna otra fuente
       const logos = [
-        { url: require("@/assets/clients_logos/lavandaclean-logo.png"), alt: "Logo 1" },
-        { url: require("@/assets/clients_logos/makuwool-logo.png"), alt: "Logo 2" },
-        { url: require("@/assets/clients_logos/ripp-logo.png"), alt: "Logo 3" },
-        { url: require("@/assets/clients_logos/setup-logo.png"), alt: "Logo 4" },
-        { url: require("@/assets/clients_logos/setup-logo.png"), alt: "Logo 4" },
+        { url: require('@/assets/clients_logos/maxam.jpg'), alt: "Logo Maxam"},
+        { url: require('@/assets/clients_logos/slang.jpg'), alt: "Logo Slang"},
+        { url: require('@/assets/clients_logos/optimmet.jpg'), alt: "Logo Optimmet"},
+        { url: require('@/assets/clients_logos/equans.jpg'), alt: "Logo Equans"},
+        { url: require('@/assets/clients_logos/lahiguera.jpg'), alt: "Logo La Higuera"},
+        { url: require('@/assets/clients_logos/schneider.jpg'), alt: "Logo Schneider"},
+        { url: require('@/assets/clients_logos/ppr.jpg'), alt: "Logo PPR"},
+        { url: require('@/assets/clients_logos/ruta12.jpg'), alt: "Logo Ruta 12"},
+        { url: require('@/assets/clients_logos/breaktime.jpg'), alt: "Logo Breaktime"},
+        {  url: require('@/assets/clients_logos/hakansson.jpg'), alt: "Logo Hakansson"},
+        {  url: require('@/assets/clients_logos/zuniga.jpg'), alt: "Logo Zuñiga"},
         // Agrega más logos según sea necesario
       ];
 

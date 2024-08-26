@@ -831,6 +831,13 @@ h5 {
   padding-top: 20px;
 }
 
+.project-img-cont {
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid #D9D9D9;
+}
+
 .carousel-control-next {
   display: flex;
   justify-content: flex-end;
