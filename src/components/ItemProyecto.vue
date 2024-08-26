@@ -20,9 +20,19 @@
     </div>
     <div class="row img-proyectos">
       <div class="col-3"  v-for="(project, index) in cliente.projects" :key="index">
-        <div class="project-img-cont">
+        <div class="project-img-cont" @click="openModal(project)">
           <img :src="getImagePath(project.img)" alt="">
+          <div class="overlay">
+            <img src="../assets/icons/pruple-eye.svg" alt="" class="eye-icon">
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div v-if="showModal" class="modal-backdrop" @click="closeModal">
+      <div class="modal-content"  @click.stop>
+        <span class="close-btn" @click="closeModal">&times;</span>
+        <img :src="getImagePath(currentProject.img)" alt="" class="modal-img">
       </div>
     </div>
   </div>
@@ -33,12 +43,18 @@ import ColorChip from './ColorChip.vue'
 import { mapState } from 'vuex'
 
 export default {
-  name: "GridBrands",
+  name: "ItemProyecto",
   components: {
     ColorChip,
   },
   props: {
     cliente: Object,
+  },
+  data() {
+    return {
+      showModal: false,       // Define la propiedad showModal
+      currentProject: null,   // Define la propiedad currentProject
+    };
   },
   computed: {
     ...mapState('[clients]')
@@ -51,6 +67,14 @@ export default {
         console.error(`La imagen ${imagen} no se encontró en la ruta especificada.`);
         return '';
       }
+    },
+    openModal(project) {
+      this.currentProject = project;
+      this.showModal = true;
+    },
+    closeModal() {
+      this.showModal = false;
+      this.currentProject = null;
     },
   }
 }
