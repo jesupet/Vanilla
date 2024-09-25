@@ -1,0 +1,32 @@
+.branding-page {
+  background-color: $dark-purple;
+  color: $white;
+  position: relative;
+  @media (min-width: 992px) {
+    .columna1-header {
+        width: 100%;
+        margin-left: 30px;
+        padding: 48px;
+    }
+}
+}
+
+.branding-image {
+  width: 500px;
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+.frase-branding {
+  padding: 50px 400px;
+  font-size: 20px;
+}
+.bg-grey {
+  font-size: 20px;
+  p {
+    padding: 0px 55px;
+  }
+  img {
+  width: 100%;
+  }
+}

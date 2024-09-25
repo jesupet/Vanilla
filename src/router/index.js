@@ -3,6 +3,7 @@ import HomeVanilla from '../views/HomeVanilla.vue'
 import HomeTemporal from '../views/HomeTemporal.vue'
 import NosotrosView from '../views/NosotrosView.vue'
 import ProyectosView from '@/views/ProyectosView.vue'
+import BrandingServicio from '@/views/servicios/BrandingServicio.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/proyectos',
     name: 'proyectos',
     component: ProyectosView,
+  },
+  {
+    path: '/servicios/branding',
+    name: 'branding',
+    component: BrandingServicio,
   },
 ]
 

@@ -479,6 +479,9 @@ footer {
   .carousel-inner-proyectos .logo-cliente {
     width: auto;
   }
+  .carousel-slider {
+    max-width: 500px;
+  }
 }
 .carousel-proyecto .carousel-indicators [data-bs-target] {
   background-color: #1C1729;
@@ -942,6 +945,41 @@ h5 {
   .project-img-cont {
     max-height: 300px;
   }
+}
+
+.branding-page {
+  background-color: #1C1729;
+  color: #fff;
+  position: relative;
+}
+@media (min-width: 992px) {
+  .branding-page .columna1-header {
+    width: 100%;
+    margin-left: 30px;
+    padding: 48px;
+  }
+}
+
+.branding-image {
+  width: 500px;
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+}
+
+.frase-branding {
+  padding: 50px 400px;
+  font-size: 20px;
+}
+
+.bg-grey {
+  font-size: 20px;
+}
+.bg-grey p {
+  padding: 0px 55px;
+}
+.bg-grey img {
+  width: 100%;
 }
 
 .carousel-control-next {

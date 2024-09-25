@@ -46,6 +46,9 @@
       width: auto;
     }
   }
+  .carousel-slider {
+    max-width: 500px;
+  }
 }
 .carousel-proyecto {
   .carousel-indicators [data-bs-target] {

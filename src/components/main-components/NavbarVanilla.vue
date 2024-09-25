@@ -19,7 +19,7 @@
             <router-link 
             class="nav-link align-middle" 
             aria-current="page" 
-            to="/">
+            to="/home">
               Home
             </router-link>
           </li>
@@ -34,7 +34,7 @@
           <li class="nav-item">
             <router-link 
             class="nav-link" 
-            :to="'/proyectos'"  >
+            :to="'/servicios/branding'"  >
               ¿Qué Hacemos?
             </router-link>
           </li>

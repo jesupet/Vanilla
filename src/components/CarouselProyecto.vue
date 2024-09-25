@@ -8,7 +8,7 @@
         :BgColor="service.bgColor"
         class="d-inline-block mx-1"
       />
-    <div :id="`carousel-${cliente.company.replace(/\s+/g, '-')}`" class="carousel slide pt-4">
+    <div :id="`carousel-${cliente.company.replace(/\s+/g, '-')}`" class="carousel slide pt-4 carousel-slider">
       <div class="carousel-indicators indicators-slide">
         <button type="button" :data-bs-target="`#carousel-${cliente.company.replace(/\s+/g, '-')}`" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" :data-bs-target="`#carousel-${cliente.company.replace(/\s+/g, '-')}`" data-bs-slide-to="1" aria-label="Slide 2"></button>
