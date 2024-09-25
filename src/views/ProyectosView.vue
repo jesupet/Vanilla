@@ -12,6 +12,7 @@
     <WavesDivGrey/>
     <div id="proyectos" class="container" v-for="(cliente, index) in clients" :key="index">
        <ItemProyecto :cliente="cliente"/>
+       <CarouselProyecto :cliente="cliente"/>
     </div>  
   </div>
 </template>
@@ -20,6 +21,7 @@
 import WavesDiv from '../components/WavesDiv.vue'
 import WavesDivGrey from '../components/WavesDivGrey.vue'
 import ItemProyecto from '../components/ItemProyecto.vue'
+import CarouselProyecto from '../components/CarouselProyecto.vue'
 import { mapState } from 'vuex'
 
 
@@ -29,7 +31,7 @@ export default {
     WavesDiv,
     WavesDivGrey,
     ItemProyecto,
-
+    CarouselProyecto,
   },
   computed : {
     ...mapState (['clients'])

@@ -10,16 +10,21 @@
 }
 .texto-proyecto {
   border: 1px solid $light-grey;
-  width: 408px;
-  height: 408px;
   border-radius: 20px;
   padding: 100px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media (min-width: $desktop-width) {
+    width: 408px;
+    height: 408px;
+  }
 }
 .img-proyectos {
   img {
+    width: 350px;
+  }
+  @media (min-width: $desktop-width) {
     max-width: 100%;
   }
 }
@@ -29,7 +34,6 @@
   padding-top: 20px
 }
 .project-img-cont {
-  max-height: 300px;
   overflow: hidden;
   border-radius: 20px;
   border: 1px solid $light-grey;
@@ -59,5 +63,8 @@
   }
   &:hover .overlay {
     opacity: 1;
+  }
+  @media (min-width: $desktop-width) {
+    max-height: 300px;
   }
 }

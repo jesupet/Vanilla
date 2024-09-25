@@ -33,3 +33,28 @@
     place-items: center;
   }
 } 
+
+//Carousel Proyectos
+@media (max-width: $desktop-width) {
+  .carousel-inner-proyectos {
+    max-width: 500px;
+    height: 500px;
+    .carousel-item, .texto-proyecto {
+      height: 100%
+    }
+    .logo-cliente {
+      width: auto;
+    }
+  }
+}
+.carousel-proyecto {
+  .carousel-indicators [data-bs-target] {
+  background-color: $dark-purple;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+}
+.indicators-slide {
+  bottom: -45px;
+}
