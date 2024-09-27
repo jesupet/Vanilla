@@ -133,10 +133,11 @@
       <div class="container text-center">
         <h3 class="tittle2 white-font">Preguntas frecuentes</h3>
         <p class="subtitle white-font">que aclaramos para ti</p>
-        
+        <AcordionDudas/>
       </div>
     </div>
-    <WavesDiv class="reflect-y over"/>
+    <WavesDiv class="waves-cont-purple reflect-y over"/>
+
       <div class="container-fluid cta-branding">
         <div class="container d-flex justify-content-between mx-auto cta-box">
           <h3 class="tittle2 bold d-md-inline d-block"><span class="tittle2 no-bold">¿Necesitas un proyecto de </span>branding?</h3>
@@ -156,14 +157,55 @@
         </div>
       </div>
     <WavesDiv/>
+    <div class="row">
+      <div class="col-4">
+        <div class="card text-center mx-auto client-card whitebg">
+          <div class="card-body">
+            <p class="card-text">Me encantó trabajar con Vanilla, ya que rápidamente captaron la idea de lo que estábamos buscando, con una excelente disposición a encontrar las soluciones de nuestros requerimientos.</p>
+            <div>
+              <h4 class="card-title tittle4">Remax Central</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-center mx-auto client-card whitebg">
+          <div class="card-body">
+            <p class="card-text">Me encantó trabajar con Vanilla, ya que rápidamente captaron la idea de lo que estábamos buscando, con una excelente disposición a encontrar las soluciones de nuestros requerimientos.</p>
+            <div>
+              <h4 class="card-title tittle4">Remax Central</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card text-center mx-auto client-card whitebg">
+          <div class="card-body">
+            <p class="card-text">Me encantó trabajar con Vanilla, ya que rápidamente captaron la idea de lo que estábamos buscando, con una excelente disposición a encontrar las soluciones de nuestros requerimientos.</p>
+            <div>
+              <h4 class="card-title tittle4">Remax Central</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center logos-branding">
+      <h3 class="tittle2">También han <span class="purple-font tittle2">confiado</span></h3>
+      <p class="subtitle">en nuestro talento y compromiso</p>
+      <CarouselLogos :logoGroups="logoGroups" :isMobile="isMobile" class="mt-5"/>
+    </div>
   </div>
 </template>
 
 <script>
+import {logos} from '@/store/logos'
+
 import WavesDiv from '../../components/WavesDiv.vue'
 import WavesDivGrey from '../../components/WavesDivGrey.vue'
 import TransparentButton from '@/components/buttons/TransparentButton.vue'
-
+import AcordionDudas from '@/components/AcordionDudas.vue'
+import CarouselLogos from '@/components/CarouselLogos.vue'
+import { mapGetters, mapActions, mapState } from 'vuex'
 
 export default {
   name: 'BrandingServicio',
@@ -171,11 +213,15 @@ export default {
     WavesDiv,
     WavesDivGrey,
     TransparentButton,
+    AcordionDudas,
+    CarouselLogos,
   },
   data() {
     return {
       showModal: false,       // Define la propiedad showModal
       currentProject: null,   // Define la propiedad currentProject
+      logos: logos,
+      isMobile: window.innerWidth <= 768, // Detecta el ancho de la pantalla al principio
     };
   },
   methods: {
@@ -187,6 +233,23 @@ export default {
       this.showModal = false;
       this.currentProject = null;
     },
-  }
+    ...mapActions(["fetchLogos"]),
+    handleResize() {
+      // Detecta el cambio en el ancho de la pantalla
+      this.isMobile = window.innerWidth <= 768;
+      console.log(window.innerWidth)
+    },
+  },
+  computed: {
+    ...mapGetters(["logoGroups"]),
+    ...mapState (['clients'])
+  },
+  created() {
+    window.addEventListener("resize", this.handleResize);
+    this.fetchLogos();
+  },
+  beforeUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  },
 }
 </script>

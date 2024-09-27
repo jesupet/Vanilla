@@ -31,3 +31,8 @@
   background-position: bottom;
   margin-bottom: -1px;
 }
+.over {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -150px
+}

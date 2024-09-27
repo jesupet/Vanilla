@@ -1,0 +1,44 @@
+.accordion {
+  @media (min-width: $big-tablet-width) {
+    padding: 20px 50px;
+  }
+  color: $dark-purple;
+  font-size: 25px;
+}
+
+.accordion-item {
+  border: 1px solid transparent;
+  border-radius: 35px;
+  margin-bottom: 20px;
+  color: $dark-purple;
+  overflow: hidden; /* Para que los bordes redondeados también apliquen a los contenidos colapsables */
+}
+.accordion-item:first-of-type, .accordion-item:last-of-type{
+  border-radius: 35px;
+}
+
+.accordion-button {
+  background-color: $white;
+  border: none; /* Quitamos el borde del botón porque lo manejamos en el item */
+  border-radius: 0px; /* Sin bordes redondeados aquí porque los manejaremos en el accordion-item */
+  margin: 0; /* Eliminamos los márgenes para que los bordes redondeados del item no se interrumpan */
+  padding: 15px 35px;
+  color: $dark-purple;
+  font-size: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $dark-purple;
+  background-color: $white;
+  font-weight: 500;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  border-radius: 35px; /* Añadimos bordes redondeados al final del contenido */
+  color: $dark-purple;
+  padding: 15px 35px;
+}

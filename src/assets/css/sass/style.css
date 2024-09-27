@@ -328,6 +328,12 @@ footer {
   margin-bottom: -1px;
 }
 
+.over {
+  position: relative;
+  z-index: 2;
+  margin-bottom: -150px;
+}
+
 .card-body {
   padding-right: 20px;
   padding-left: 20px;
@@ -712,6 +718,54 @@ h5 {
   cursor: pointer;
 }
 
+.accordion {
+  color: #1C1729;
+  font-size: 25px;
+}
+@media (min-width: 992px) {
+  .accordion {
+    padding: 20px 50px;
+  }
+}
+
+.accordion-item {
+  border: 1px solid transparent;
+  border-radius: 35px;
+  margin-bottom: 20px;
+  color: #1C1729;
+  overflow: hidden; /* Para que los bordes redondeados también apliquen a los contenidos colapsables */
+}
+
+.accordion-item:first-of-type, .accordion-item:last-of-type {
+  border-radius: 35px;
+}
+
+.accordion-button {
+  background-color: #fff;
+  border: none; /* Quitamos el borde del botón porque lo manejamos en el item */
+  border-radius: 0px; /* Sin bordes redondeados aquí porque los manejaremos en el accordion-item */
+  margin: 0; /* Eliminamos los márgenes para que los bordes redondeados del item no se interrumpan */
+  padding: 15px 35px;
+  color: #1C1729;
+  font-size: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #1C1729;
+  background-color: #fff;
+  font-weight: 500;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  border-radius: 35px; /* Añadimos bordes redondeados al final del contenido */
+  color: #1C1729;
+  padding: 15px 35px;
+}
+
 .list-item {
   font-family: "Source Serif Pro", serif;
   font-weight: 700;
@@ -1028,11 +1082,18 @@ h5 {
 .bg-purple {
   background-color: #6D44BC;
   padding: 80px 0px;
+  position: relative;
 }
 
 .cta-branding {
   background-color: #1C1729;
   color: #fff;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.logos-branding {
+  padding-top: 50px;
 }
 
 .carousel-control-next {
