@@ -10,7 +10,9 @@
     }
 }
 }
-
+.second-container {
+  position: relative;
+}
 .branding-image {
   width: 500px;
   position: absolute;
@@ -23,10 +25,31 @@
 }
 .bg-grey {
   font-size: 20px;
-  p {
+  .branding-text {
     padding: 0px 55px;
   }
   img {
   width: 100%;
   }
+}
+.first-row {
+  padding-bottom: 148px;
+}
+.tipos-branding-cont{
+  position: absolute;
+  bottom: -300px;
+}
+.proyectos-branding {
+  padding-top: 300px;
+  .project-img-cont {
+    min-height: 414px;
+  }
+}
+.bg-purple {
+  background-color: #6D44BC;
+  padding: 80px 0px;
+}
+.cta-branding {
+  background-color: $dark-purple;
+  color: $white;
 }

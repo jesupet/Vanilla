@@ -77,3 +77,23 @@ h5 {
     font-size: 66px;
   }
 }
+.branding-card {
+  max-width: 90vw;
+  height: 320px;
+  box-sizing: border-box;
+  background-color: #6d44bc;
+  color: #fff;
+  border-radius: 25px;
+  padding: 100px 48px;
+  margin: 0px 16px;
+  .card-title {
+    font-size: 35px;
+  }
+  .card-body {
+    padding:0px;
+  }
+}
+.dark-purple-card {
+  background-color: #1b1629;
+  margin-top: 50px;
+}
